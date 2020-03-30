@@ -1,7 +1,7 @@
 /* Method to declare your own fonts */
 @font-face {
-	font-family: cocaColaFont;
-    src: url(../assets/fonts/LOKICOLA.TTF);
+	font-family: AppleGaramond;
+    src: url(../assets/fonts/AppleGaramond.TTF);
 }
 @font-face {
     font-family: OpenSans;
@@ -100,7 +100,7 @@ There is plenty more styling to do than indicated here, in mobile it still defau
     }
     
     .logo h1 {
-    font-family: cocaColaFont; /* You don't need to repeat this for each media query as it is propagated */
+    font-family: AppleGaramond; /* You don't need to repeat this for each media query as it is propagated */
     font-size: 31px;
     margin: 0;
     margin-top: -10px;
@@ -112,7 +112,7 @@ There is plenty more styling to do than indicated here, in mobile it still defau
     }
     
     .logo h2 {
-    font-family: cocaColaFont;
+    font-family: AppleGaramond;
     font-size: 31px;
     margin-top: -6px;
     margin-bottom: -15px;
@@ -156,12 +156,11 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Oswald', sans-serif;
-	/*font-family: cocaColaFont;*/
 }
 #main_3d_image {
-    background-image: url(../assets/images/site_images/main_3D.jpg); 
+    background-image: url(../assets/images/site_images/Steve-Jobs-garage.jpg); 
     background-repeat: no-repeat;
-    height: 220px;
+    height: 230px;
     background-position: center;
 }
 #main_text {
@@ -354,7 +353,7 @@ X3D, x3d {
     }
     
     .logo h1 {
-    font-family: cocaColaFont; /* You don't need to repeat this for each media query as it is propagated */
+    font-family: AppleGaramond; /* You don't need to repeat this for each media query as it is propagated */
     font-size: 75px;
     margin: 0;
     margin-top: -10px;
@@ -366,7 +365,7 @@ X3D, x3d {
     }
     
     .logo h2 {
-    font-family: cocaColaFont;
+    font-family: AppleGaramond;
     font-size: 75px;
     margin-top: 0px;
     margin-bottom: -15px;
