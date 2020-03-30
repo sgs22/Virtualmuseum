@@ -33,12 +33,9 @@
     <nav class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
       <!-- Brand -->
       <div class="logo">
-        <a class="navbar-brand" href="index.html">
-          <h1>1</h1>
-          <h1>oca</h1>
-          <h2>Cola</h2>
-          <h3>Journey</h3>
-          <p>Refreshing the world, one story at a time</p>
+        <a class="navbar-brand" href="index.php">
+          <h1>Virtual Museum</h1>
+          <p>Apple's Most innovative products.</p>
         </a>
       </div>
         
