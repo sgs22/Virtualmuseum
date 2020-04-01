@@ -6,36 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="application/css/bootstrap.css">
+    <link rel="stylesheet" href="application/css/custom.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     
 
     <!-- X3DOM Package -->
-    <link rel="stylesheet" type="text/css" href="css/x3dom.css"></link>
-    <link rel="stylesheet" type='text/javaScript' href="scripts/js/x3dom.js"></link>
+    <link rel="stylesheet" type="text/css" href="application/css/x3dom.css"></link>
+    <link rel="stylesheet" type='text/javaScript' href="application/scripts/js/x3dom.js"></link>
     <script type='text/javaScript' src="http://x3dom.org/x3dom/release/x3dom.js"></script>
 
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/42611a5285.js" crossorigin="anonymous"></script>
+    <link data-require="font-awesome@*" data-semver="4.1.0" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
 
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
 
-    <title>Coca Cola Journey 3D App Template</title>
+    <title>Virtual Museum 3D Web Application</title>
   </head>
   <body id="body">
     <!-- Logo and navigation bar -->
     <nav class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
+      <!-- Will need to be updated for an actual rerot apple logo-->
       <!-- Brand -->
       <div class="logo">
         <a class="navbar-brand" href="index.php">
-          <h1>Virtual Museum</h1>
-          <p>Apple's Most innovative products.</p>
+        <i class="fa fa-apple fa-retro fa-2x"></i>
+          <!--<p>Apple's Most innovative products.</p>-->
         </a>
       </div>
         
@@ -74,7 +76,7 @@
       <div id="home" style="display: block;">
         <div class="row">
           <div class="col-sm-12">
-            <div id="main_3d_image">
+            <div id="main_3d_image" class="responsive">
               <div id="main_text" class="col-xs-12 col-sm-4">
                 <div id="title_home"></div>
                 <div id="subTitle_home"></div>
@@ -83,13 +85,13 @@
             </div>
           </div>
         </div>
-        <!-- Row of Cards on grid -->
+        <!-- First Row of Cards on grid -->
         <div class="row">
           <!-- Coca Cola Column -->
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <div class="card">
               <a href="assets/images/render_images/coke_render.jpg" data-fancybox data-caption="My Coke Can Render" class="thumbnail">
-                <img class="card-img-top img-fluid img-thumbnail" src="assets/images/site_images/coca_cola.jpg" alt="Coca Cola">
+                <img class="card-img-top img-fluid img-thumbnail" src="application/assets/images/site_images/coca_cola.jpg" alt="Coca Cola">
               </a>
               <div class="card-body">
                 <div id="title_left" class="card-title homeText"></div>
@@ -101,10 +103,10 @@
           </div>
     
           <!-- Sprite Column -->
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <div class="card">
               <a href="assets/images/render_images/sprite_render.jpg" data-fancybox data-caption="My 3D Sprite Bottle Render" class="thumbnail">
-                <img class="card-img-top img-fluid img-thumbnail" src="assets/images/site_images/sprite.jpg" alt="Sprite">
+                <img class="card-img-top img-fluid img-thumbnail" src="application/assets/images/site_images/sprite.jpg" alt="Sprite">
               </a>
               <div class="card-body">
                 <div id="title_centre" class="card-title homeText"></div>
@@ -114,12 +116,29 @@
               </div>
             </div>
           </div>
+      </div>
+      <!-- Second Row of Cards on grid -->
+      <div class="row">
+          <!-- Coca Cola Column -->
+          <div class="col-sm-6">
+            <div class="card">
+              <a href="assets/images/render_images/coke_render.jpg" data-fancybox data-caption="My Coke Can Render" class="thumbnail">
+                <img class="card-img-top img-fluid img-thumbnail" src="application/assets/images/site_images/coca_cola.jpg" alt="Coca Cola">
+              </a>
+              <div class="card-body">
+                <div id="title_left" class="card-title homeText"></div>
+                <div id="subTitle_left" class="card-subtitle homeText"></div>
+                <div id="description_left" class="card-text homeText"></div>
+                <a href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola" target="_blank" class="btn btn-primary">Find out more...</a>
+              </div>
+            </div>
+          </div>
     
           <!-- Dr Pepper Column -->
-          <div class="col-sm-4">
+          <div class="col-sm-6">
             <div class="card">
               <a href="assets/images/render_images/drpepper_render.jpg" data-fancybox data-caption="My 3D Dr Pepper Render" class="thumbnail">
-                <img class="card-img-top img-fluid img-thumbnail" src="assets/images/site_images/dr_pepper.jpg" alt="Dr Pepper">
+                <img class="card-img-top img-fluid img-thumbnail" src="application/assets/images/site_images/dr_pepper.jpg" alt="Dr Pepper">
               </a>
               <div class="card-body">
                 <div id="title_right" class="card-title homeText"></div>
@@ -386,17 +405,17 @@
     </div>
 
     <!-- Custom JS for 3d app SPA -->
-    <script src="scripts/js/swap.js"></script>
+    <script src="application/scripts/js/swap.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="scripts/js/jquery-3.4.1.js"></script>
-    <script src="scripts/js/popper.min.js"></script>
-    <script src="scripts/js/bootstrap.js"></script>
-    <script src="scripts/js/custom.js"></script>
+    <script src="application/scripts/js/jquery-3.4.1.js"></script>
+    <script src="application/scripts/js/popper.min.js"></script>
+    <script src="application/scripts/js/bootstrap.js"></script>
+    <script src="application/scripts/js/custom.js"></script>
 
     <!-- JavaScript and PHP based Gallery generator  -->
-    <script src="scripts/js/gallery_generator.js"></script>
-    <script src="scripts/js/getJsonData.js"></script>
+    <script src="application/scripts/js/gallery_generator.js"></script>
+    <script src="application/scripts/js/getJsonData.js"></script>
   </body>
 </html>
