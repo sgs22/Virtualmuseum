@@ -12,6 +12,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="application/assets/images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="application/assets/images/favicon/favicon.ico" type="image/x-icon">
 
     <!-- X3DOM Package -->
     <link rel="stylesheet" type="text/css" href="application/css/x3dom.css"></link>
@@ -54,7 +57,7 @@
             <a id="navHome" class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom"
+            <a id="navAbout" class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom"
             title="About Web 3D Applications" data-content="3D Apps is a final year and postgraduate module">About</a>
           </li>
           <!-- Dropdown -->
@@ -87,65 +90,84 @@
         </div>
         <!-- First Row of Cards on grid -->
         <div class="row">
-          <!-- Coca Cola Column -->
+          <!-- Left image -->
           <div class="col-sm-6">
-            <div class="card">
-              <a href="assets/images/render_images/coke_render.jpg" data-fancybox data-caption="My Coke Can Render" class="thumbnail">
-                <img class="card-img-top img-fluid img-thumbnail" src="application/assets/images/site_images/imac_sideview.png" alt="iMac">
-              </a>
-              <div class="card-body">
-                <div id="title_left" class="card-title homeText"></div>
-                <div id="subTitle_left" class="card-subtitle homeText"></div>
-                <div id="description_left" class="card-text homeText"></div>
-                <a href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola" target="_blank" class="btn btn-primary">Find out more...</a>
-              </div>
+            <div id="home_img_1" class="responsive">
+                <div id="home_imgtext_2" class="col-xs-12 col-sm-4">
+                  <div id="title_home"></div>
+                  <div id="subTitle_home"></div>
+                  <div id="description_home"></div>
+                </div>
             </div>
           </div>
-    
-          <!-- Sprite Column -->
+          <!-- Right image -->
           <div class="col-sm-6">
-            <div class="card">
-              <a href="assets/images/render_images/sprite_render.jpg" data-fancybox data-caption="My 3D Sprite Bottle Render" class="thumbnail">
-                <img class="card-img-top img-fluid img-thumbnail" src="application/assets/images/site_images/sprite.jpg" alt="Sprite">
-              </a>
-              <div class="card-body">
-                <div id="title_centre" class="card-title homeText"></div>
-                <div id="subTitle_centre" class="card-subtitle homeText"></div>
-                <div id="description_centre" class="card-text homeText"></div>
-                <a href="http://www.coca-cola.co.uk/drinks/sprite/sprite" target="_blank" class="btn btn-primary">Find out more...</a>
-              </div>
+            <div id="home_img_2" class="responsive">
+                <div id="home_imgtext_2" class="col-xs-12 col-sm-4">
+                  <div id="title_home"></div>
+                  <div id="subTitle_home"></div>
+                  <div id="description_home"></div>
+                </div>
             </div>
           </div>
-      </div>
-      <!-- Second Row of Cards on grid -->
-      <div class="row">
-          <!-- Coca Cola Column -->
-          <div class="col-sm-6">
-          <div id="#home_img_1" class="responsive">
-              <div id="#home_imgtext_1" class="col-xs-6 col-sm-4">
-                <div id="title_home"></div>
-                <div id="subTitle_home"></div>
-                <div id="description_home"></div>
-              </div>
+        </div>
+        <!-- Second Row of Cards on grid -->
+        <div class="row">
+          <!-- Center image -->
+          <div class="col-sm-12">
+            <div id="home_img_3" class="responsive">
+                <div id="home_imgtext_3" class="col-xs-12 col-sm-4">
+                  <div id="title_home"></div>
+                  <div id="subTitle_home"></div>
+                  <div id="description_home"></div>
+                </div>
             </div>
           </div>
-          <!-- Dr Pepper Column -->
+        </div>
+        <!-- Third Row of Cards on grid -->
+        <div class="row">
+          <!-- Left image -->
           <div class="col-sm-6">
-            <div class="card">
-              <a href="assets/images/render_images/drpepper_render.jpg" data-fancybox data-caption="My 3D Dr Pepper Render" class="thumbnail">
-                <img class="card-img-top img-fluid img-thumbnail" src="application/assets/images/site_images/dr_pepper.jpg" alt="Dr Pepper">
-              </a>
-              <div class="card-body">
-                <div id="title_right" class="card-title homeText"></div>
-                <div id="subTitle_right" class="card-subtitle homeText"></div>
-                <div id="description_right" class="card-text homeText"></div>
-                <a href="http://www.coca-cola.co.uk/drinks/dr-pepper/dr-pepper" target="_blank" class="btn btn-primary">Find out more...</a>
-              </div>
+            <div id="home_img_4" class="responsive">
+                <div id="home_imgtext_4" class="col-xs-12 col-sm-4">
+                  <div id="title_home"></div>
+                  <div id="subTitle_home"></div>
+                  <div id="description_home"></div>
+                </div>
+            </div>
+          </div>
+          <!-- Right image -->
+          <div class="col-sm-6">
+            <div id="home_img_5" class="responsive">
+                <div id="home_imgtext_5" class="col-xs-12 col-sm-4">
+                  <div id="title_home"></div>
+                  <div id="subTitle_home"></div>
+                  <div id="description_home"></div>
+                </div>
             </div>
           </div>
         </div>
       </div>
       <!-- End Home page Contents-->
+      <!-- About Page -->
+      <div id="about" style>
+        <div class="row">
+          <!-- Sprite Column -->
+            <div class="col-sm-6">
+              <div class="card">
+                <a href="assets/images/render_images/sprite_render.jpg" data-fancybox data-caption="My 3D Sprite Bottle Render" class="thumbnail">
+                  <img class="card-img-top img-fluid img-thumbnail" src="application/assets/images/site_images/sprite.jpg" alt="Sprite">
+                </a>
+                <div class="card-body">
+                  <div id="title_centre" class="card-title homeText"></div>
+                  <div id="subTitle_centre" class="card-subtitle homeText"></div>
+                  <div id="description_centre" class="card-text homeText"></div>
+                 <a href="http://www.coca-cola.co.uk/drinks/sprite/sprite" target="_blank" class="btn btn-primary">Find out more...</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div> <!-- Ends About Page -->
       <!-- This is the 3D Models -->
       <div id="models" style>
         <!-- Row to hold cards -->
@@ -234,7 +256,7 @@
       </div>
       <!-- End x3d Models and Gallery -->  
       <!-- Start Interaction Panels NEEDS TO BE DONE!!!-->
-    <div id="interaction" class="row" style>
+      <div id="interaction" class="row" style>
       <!-- Column for camera view controls -->
       <div class="col-sm-4">
         <div class="card text-left">
@@ -313,10 +335,10 @@
           </div>
         </div>
       </div>
-    </div> 
-    <!-- End Interaction Panel -->
-    <!-- Row to hold sprite description text -->
-    <div id="spriteDescription" class="row" style>
+      </div> 
+      <!-- End Interaction Panel -->
+      <!-- Row to hold sprite description text -->
+      <div id="spriteDescription" class="row" style>
       <div class="col-sm-12">
         <div class="card">
           <div class="card-body">
@@ -327,8 +349,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- End sprite Description contents -->
+      </div>
+      <!-- End sprite Description contents -->
     <!-- Row to hold coke description text -->
     <div id="cokeDescription" class="row" style>
       <div class="col-sm-12">
@@ -356,7 +378,7 @@
         </div>
       </div>
     </div>
-    <!-- End drpepper Description contents -->
+      <!-- End drpepper Description contents -->
     </div> <!-- End 3D APP SPA CONTENTS -->
     <!-- Footer for 3dApp -->
     <nav class="navbar navbar-expand-sm footer navbar-fixed-bottom">
