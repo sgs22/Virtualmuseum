@@ -91,7 +91,7 @@
           <div class="col-sm-6">
             <div class="card">
               <a href="assets/images/render_images/coke_render.jpg" data-fancybox data-caption="My Coke Can Render" class="thumbnail">
-                <img class="card-img-top img-fluid img-thumbnail" src="application/assets/images/site_images/coca_cola.jpg" alt="Coca Cola">
+                <img class="card-img-top img-fluid img-thumbnail" src="application/assets/images/site_images/imac_sideview.png" alt="iMac">
               </a>
               <div class="card-body">
                 <div id="title_left" class="card-title homeText"></div>
@@ -121,19 +121,14 @@
       <div class="row">
           <!-- Coca Cola Column -->
           <div class="col-sm-6">
-            <div class="card">
-              <a href="assets/images/render_images/coke_render.jpg" data-fancybox data-caption="My Coke Can Render" class="thumbnail">
-                <img class="card-img-top img-fluid img-thumbnail" src="application/assets/images/site_images/coca_cola.jpg" alt="Coca Cola">
-              </a>
-              <div class="card-body">
-                <div id="title_left" class="card-title homeText"></div>
-                <div id="subTitle_left" class="card-subtitle homeText"></div>
-                <div id="description_left" class="card-text homeText"></div>
-                <a href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola" target="_blank" class="btn btn-primary">Find out more...</a>
+          <div id="#home_img_1" class="responsive">
+              <div id="#home_imgtext_1" class="col-xs-6 col-sm-4">
+                <div id="title_home"></div>
+                <div id="subTitle_home"></div>
+                <div id="description_home"></div>
               </div>
             </div>
           </div>
-    
           <!-- Dr Pepper Column -->
           <div class="col-sm-6">
             <div class="card">
@@ -180,7 +175,7 @@
                   <div class="model3D">
                     <x3d class="model3D">
                       <scene>
-                        <inline url="assets/x3d/sprite.x3d"> </inline>
+                        <inline url="application/assets/x3d/sprite.x3d"> </inline>
                       </scene>
                     </x3d>
                   </div>
@@ -193,7 +188,7 @@
                   <div class="model3D">
                     <x3d class="model3D">
                       <scene>
-                        <inline url="assets/x3d/sprite.x3d"> </inline>
+                        <inline url="application/assets/x3d/sprite.x3d"> </inline>
                       </scene>
                     </x3d>
                   </div>
@@ -205,7 +200,7 @@
                   <div class="model3D">
                     <x3d class="model3D">
                       <scene>
-                        <inline url="assets/x3d/sprite.x3d"> </inline>
+                        <inline url="application/assets/x3d/sprite.x3d"> </inline>
                       </scene>
                     </x3d>
                   </div>

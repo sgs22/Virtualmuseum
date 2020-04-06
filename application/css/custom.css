@@ -218,12 +218,29 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0px;
     line-height: 1.2;
 } 
+#home_img_1 {
+    background-image: url(../assets/images/site_images/Steve-Jobs-garage.jpg); 
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#home_imgtext_1 {
+    float: left;
+    margin: 5%;
+    width: 90%;
+    display: block;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    border-radius: 5px;
+}
 .card {
-    border: 0px solid rgba(0,0,0,.125);
+    border: 0px solid white;
     border-radius: .25rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: rgb(243, 182, 182);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: white;
 }
 
 .card-header {
