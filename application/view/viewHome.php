@@ -30,7 +30,7 @@
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
 
-    <title>Virtual Museum 3D Web Application</title>
+    <title>Retro Apple Museum</title>
   </head>
   <body id="body">
     <!-- Logo and navigation bar -->
@@ -75,15 +75,15 @@
     </nav>
     <!-- Start of 3D App SPA Contents -->
     <div class="container-fluid main_contents"> 
-      <!-- Home Page Content -->
+      <!-- HOME PAGE CONTENT -->
       <div id="home" style="display: block;">
         <div class="row">
           <div class="col-sm-12">
             <div id="main_3d_image" class="responsive">
-              <div id="main_text" class="col-xs-12 col-sm-4">
-                <div id="title_home"></div>
-                <div id="subTitle_home"></div>
-                <div id="description_home"></div>
+              <div class="col-md p-lg-5 mx-auto my-5">
+                <h1 class="display-4 font-weight-normal">Apple Virtual Museum</h1>
+                <p class="lead font-weight-normal">Looking into the history of Apples msot iconic products.</p>
+                <a class="btn btn-outline-secondary" href="#">Take a tour</a>
               </div>
             </div>
           </div>
@@ -148,237 +148,293 @@
           </div>
         </div>
       </div>
-      <!-- End Home page Contents-->
-      <!-- About Page -->
+      <!-- END HOME PAGE CONTENTS-->
+      <!-- ABOUT PAGE -->
       <div id="about" style>
-        <div class="row">
-          <!-- Sprite Column -->
-            <div class="col-sm-6">
-              <div class="card">
-                <a href="assets/images/render_images/sprite_render.jpg" data-fancybox data-caption="My 3D Sprite Bottle Render" class="thumbnail">
-                  <img class="card-img-top img-fluid img-thumbnail" src="application/assets/images/site_images/sprite.jpg" alt="Sprite">
-                </a>
-                <div class="card-body">
-                  <div id="title_centre" class="card-title homeText"></div>
-                  <div id="subTitle_centre" class="card-subtitle homeText"></div>
-                  <div id="description_centre" class="card-text homeText"></div>
-                 <a href="http://www.coca-cola.co.uk/drinks/sprite/sprite" target="_blank" class="btn btn-primary">Find out more...</a>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="first-slide" src="application/assets/images/site_images/imac_sideview.png" alt="First slide">
+              <div class="container">
+                <div class="carousel-caption text-left">
+                  <h1>Explore the Virtual Museum</h1>
+                  <p>In this Virtual Museum you will be able to explore the iconic products that apple created revolutionising the late 20th century.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Explore Musuem</a></p>
                 </div>
               </div>
             </div>
+            <div class="carousel-item">
+              <img class="second-slide" src="application/assets/images/site_images/Apple_II_IMG_4223" alt="Second slide">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Learn Apple's History</h1>
+                  <p>Look at renders, live models and products right from this website available and open for free 24 hours a day.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="third-slide" src="application/assets/images/site_images/Steve-Jobs-garage" alt="Third slide">
+              <div class="container">
+                <div class="carousel-caption text-right">
+                  <h1>This is an example of how a virtual Museum is created</h1>
+                  <p>This virtual museum using the latest technology in web devlopment to seemlessly explore products cretaed over 40 years ago.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-      </div> <!-- Ends About Page -->
-      <!-- This is the 3D Models -->
+          <!-- About Points -->
+        <div class="container marketing">
+          <!-- Three columns of text below the carousel -->
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="rounded-circle" src="application/assets/images/site_images/Steve_Jobs.jpg" alt="Generic placeholder image" width="140" height="140" background-size= "cover" background-position= "center">
+              <h2>Steve Jobs</h2>
+              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img class="rounded-circle" src="application/assets/images/site_images/jony_ive.jpg" alt="Generic placeholder image" width="140" height="140"  background-size= "cover" background-position= "center">
+              <h2>Jony Ive</h2>
+              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img class="rounded-circle" src="application/assets/images/site_images/Steve_Wozniak.jpg" alt="Generic placeholder image" width="140" height="140"  background-size= "cover" background-position= "center">
+              <h2>Steve Wozniak</h2>
+              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+        </div> 
+      </div> <!-- END ABOUT PAGE -->
+      <!-- 3D MODEL PAGE -->
       <div id="models" style>
-        <!-- Row to hold cards -->
-        <div class="row">
-          <!-- Column to hold x3d Model -->
-          <div class="col-sm-8">
-            <div class="card text-left">
-              <div class="card-header">
-                <ul class="nav nav-tabs card-header-tabs">
-                  <li class="nav-item">
-                    <a id="navSprite" class="nav-link active" href="#">Sprite</a>
-                  </li>
-                  <li class="nav-item">
-                    <a id="navCoke" class="nav-link" href="#">Coca Cola</a>
-                  </li>
-                  <li class="nav-item">
-                    <a id="navPepper" class="nav-link" href="#">Dr Pepper</a>
-                  </li>
-                </ul>
-              </div>
-              <!-- Bootstrap 4 card body tp hold info about x3d model -->
-              <div class="card-body">
-                <!-- Sprite X3D Model -->
-                <div id="sprite">
-                  <div id="x3dModelTitle_sprite" class="card-title drinksText"></div>
-                  <!-- Place x3D Model here -->
-                  <div class="model3D">
-                    <x3d class="model3D">
-                      <scene>
-                        <inline url="application/assets/x3d/sprite.x3d"> </inline>
-                      </scene>
-                    </x3d>
-                  </div>
-                  <div id="x3dCreationMethod_sprite" class="card-title drinksText"></div>
+          <!-- Row to hold cards -->
+          <div class="row">
+            <!-- Column to hold x3d Model -->
+            <div class="col-sm-8">
+              <div class="card text-left">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                      <a id="navSprite" class="nav-link active" href="#">Sprite</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="navCoke" class="nav-link" href="#">Coca Cola</a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="navPepper" class="nav-link" href="#">Dr Pepper</a>
+                    </li>
+                  </ul>
                 </div>
-                <!-- Coke X3D Model -->
-                <div id="coke" style="display: none;">
-                  <div id="x3dModelTitle_coke" class="card-title drinksText"></div>
-                  <!-- Place x3D Model here -->
-                  <div class="model3D">
-                    <x3d class="model3D">
-                      <scene>
-                        <inline url="application/assets/x3d/sprite.x3d"> </inline>
-                      </scene>
-                    </x3d>
+                <!-- Bootstrap 4 card body tp hold info about x3d model -->
+                <div class="card-body">
+                  <!-- Sprite X3D Model -->
+                  <div id="sprite">
+                    <div id="x3dModelTitle_sprite" class="card-title drinksText"></div>
+                    <!-- Place x3D Model here -->
+                    <div class="model3D">
+                      <x3d class="model3D">
+                        <scene>
+                          <inline url="application/assets/x3d/sprite.x3d"> </inline>
+                        </scene>
+                      </x3d>
+                    </div>
+                    <div id="x3dCreationMethod_sprite" class="card-title drinksText"></div>
                   </div>
-                  <div id="x3dCreationMethod_coke" class="card-title drinksText"></div>
-                </div>
-                <div id="drpepper" style="display: none;">
-                  <div id="x3dModelTitle_pepper" class="card-title drinksText"></div>
-                  <!-- Place x3D Model here -->
-                  <div class="model3D">
-                    <x3d class="model3D">
-                      <scene>
-                        <inline url="application/assets/x3d/sprite.x3d"> </inline>
-                      </scene>
-                    </x3d>
+                  <!-- Coke X3D Model -->
+                  <div id="coke" style="display: none;">
+                    <div id="x3dModelTitle_coke" class="card-title drinksText"></div>
+                    <!-- Place x3D Model here -->
+                    <div class="model3D">
+                      <x3d class="model3D">
+                        <scene>
+                          <inline url="application/assets/x3d/sprite.x3d"> </inline>
+                        </scene>
+                      </x3d>
+                    </div>
+                    <div id="x3dCreationMethod_coke" class="card-title drinksText"></div>
                   </div>
-                  <div id="x3dCreationMethod_pepper" class="card-title drinksText"></div>
+                  <div id="drpepper" style="display: none;">
+                    <div id="x3dModelTitle_pepper" class="card-title drinksText"></div>
+                    <!-- Place x3D Model here -->
+                    <div class="model3D">
+                      <x3d class="model3D">
+                        <scene>
+                          <inline url="application/assets/x3d/sprite.x3d"> </inline>
+                        </scene>
+                      </x3d>
+                    </div>
+                    <div id="x3dCreationMethod_pepper" class="card-title drinksText"></div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Column to hold Image Gallery -->
-          <div class="col-sm-4">
-            <div class="card text-left">
-              <div class="card-header gallery-header">
-                <ul class="nav nav-tabs card-header-tabs">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Gallery</a>
-                  </li>
-                </ul>
+            <!-- Column to hold Image Gallery -->
+            <div class="col-sm-4">
+              <div class="card text-left">
+                <div class="card-header gallery-header">
+                  <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Gallery</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                  <div class="card-title title_gallery drinksText"></div>
+                  <!-- PHP Genrated -->
+                  <div class="gallery" id="gallery"></div>
+                  <div class="card-text description_gallery drinksText"></div>
+                </div>
               </div>
+              <!-- End of Gallery Card -->
+            </div>
+            <!-- End of Gallery column -->
+          </div>
+          <!-- Ends row x3d Model and Gallery -->
+        </div>
+        <!-- End x3d Models and Gallery -->  
+        <!-- Start Interaction Panels NEEDS TO BE DONE!!!-->
+        <div id="interaction" class="row" style>
+        <!-- Column for camera view controls -->
+        <div class="col-sm-4">
+          <div class="card text-left">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Camera Views</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="card-Title x3dCamera_Subtitle drinksText"></div>
+              <a href="#" class="btn btn-primary btn-responsive" onclick="cameraFront();">
+                Default View
+              </a>
+              <a href="#" class="btn btn-secondary btn-responsive" onclick="cameraSide();">
+                Side View
+              </a> 
+              <a href="#" class="btn btn-outline-dark disabled btn-responsive">
+                Disable
+              </a>
+              <div class="card-text x3dCameraDescription drinksText"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Column for Animation controls -->
+        <div class="col-sm-4">
+          <div class="card text-left">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Animation</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="card-Title x3dAnimationSubtitle drinksText"></div>
+              <a href="#" class="btn btn-primary btn-responsive" onclick="spin();">
+                Rotate X axis
+              </a>
+              <a href="#" class="btn btn-secondary btn-responsive" onclick="spin();">
+                Rotate Y axis
+              </a> 
+              <a href="#" class="btn btn-outline-dark disabled btn-responsive">
+                Stop
+              </a>
+              <div class="card-text x3dAnimationDescription drinksText"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Column for Render controls -->
+        <div class="col-sm-4">
+          <div class="card text-left">
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Render</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Lighting</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="card-Title x3dRenderSubtitle drinksText"></div>
+              <a href="#" class="btn btn-primary btn-responsive" onclick="">
+                Polygon
+              </a>
+              <a href="#" class="btn btn-secondary btn-responsive" onclick="wireframe();">
+                Wireframe
+              </a> 
+              <a href="#" class="btn btn-outline-dark disabled btn-responsive">
+                HeadLight
+              </a>
+              <div class="card-text x3dAnimationDescription drinksText"></div>
+            </div>
+          </div>
+        </div>
+        </div> 
+        <!-- End Interaction Panel -->
+        <!-- Row to hold sprite description text -->
+        <div id="spriteDescription" class="row" style>
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <div id="title_sprite" class="card-title drinksText"></div>
+              <div id="subTitle_sprite" class="card-subtitle drinksText"></div>
+              <div id="description_sprite" class="card-text drinksText"></div>
+              <a href="http://www.coca-cola.co.uk/drinks/sprite/sprite" class="btn btn-primary btn-responsive">Visit Sprite</a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- End sprite Description contents -->
+        <!-- Row to hold coke description text -->
+        <div id="cokeDescription" class="row" style>
+          <div class="col-sm-12">
+            <div class="card">
               <div class="card-body">
-                <div class="card-title title_gallery drinksText"></div>
-                <!-- PHP Genrated -->
-                <div class="gallery" id="gallery"></div>
-                <div class="card-text description_gallery drinksText"></div>
+                <div id="title_coke" class="card-title drinksText"></div>
+                <div id="subTitle_coke" class="card-subtitle drinksText"></div>
+                <div id="description_coke" class="card-text drinksText"></div>
+                <a href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola" class="btn btn-primary btn-responsive">Visit Coke</a>
               </div>
             </div>
-            <!-- End of Gallery Card -->
-          </div>
-          <!-- End of Gallery column -->
-        </div>
-        <!-- Ends row x3d Model and Gallery -->
-      </div>
-      <!-- End x3d Models and Gallery -->  
-      <!-- Start Interaction Panels NEEDS TO BE DONE!!!-->
-      <div id="interaction" class="row" style>
-      <!-- Column for camera view controls -->
-      <div class="col-sm-4">
-        <div class="card text-left">
-          <div class="card-header">
-            <ul class="nav nav-tabs card-header-tabs">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Camera Views</a>
-              </li>
-            </ul>
-          </div>
-          <div class="card-body">
-            <div class="card-Title x3dCamera_Subtitle drinksText"></div>
-            <a href="#" class="btn btn-primary btn-responsive" onclick="cameraFront();">
-              Default View
-            </a>
-            <a href="#" class="btn btn-secondary btn-responsive" onclick="cameraSide();">
-              Side View
-            </a> 
-            <a href="#" class="btn btn-outline-dark disabled btn-responsive">
-              Disable
-            </a>
-            <div class="card-text x3dCameraDescription drinksText"></div>
           </div>
         </div>
-      </div>
-      <!-- Column for Animation controls -->
-      <div class="col-sm-4">
-        <div class="card text-left">
-          <div class="card-header">
-            <ul class="nav nav-tabs card-header-tabs">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Animation</a>
-              </li>
-            </ul>
-          </div>
-          <div class="card-body">
-            <div class="card-Title x3dAnimationSubtitle drinksText"></div>
-            <a href="#" class="btn btn-primary btn-responsive" onclick="spin();">
-              Rotate X axis
-            </a>
-            <a href="#" class="btn btn-secondary btn-responsive" onclick="spin();">
-              Rotate Y axis
-            </a> 
-            <a href="#" class="btn btn-outline-dark disabled btn-responsive">
-              Stop
-            </a>
-            <div class="card-text x3dAnimationDescription drinksText"></div>
+        <!-- End coke Description contents -->
+        <!-- Row to hold drpepper description text -->
+        <div id="pepperDescription" class="row" style>
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <div id="title_pepper" class="card-title drinksText"></div>
+                <div id="subTitle_pepper" class="card-subtitle drinksText"></div>
+                <div id="description_pepper" class="card-text drinksText"></div>
+                <a href="http://www.coca-cola.co.uk/drinks/drpepper" class="btn btn-primary btn-responsive">Visit Dr Pepper</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Column for Render controls -->
-      <div class="col-sm-4">
-        <div class="card text-left">
-          <div class="card-header">
-            <ul class="nav nav-tabs card-header-tabs">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Render</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Lighting</a>
-              </li>
-            </ul>
-          </div>
-          <div class="card-body">
-            <div class="card-Title x3dRenderSubtitle drinksText"></div>
-            <a href="#" class="btn btn-primary btn-responsive" onclick="">
-              Polygon
-            </a>
-            <a href="#" class="btn btn-secondary btn-responsive" onclick="wireframe();">
-              Wireframe
-            </a> 
-            <a href="#" class="btn btn-outline-dark disabled btn-responsive">
-              HeadLight
-            </a>
-            <div class="card-text x3dAnimationDescription drinksText"></div>
-          </div>
-        </div>
-      </div>
-      </div> 
-      <!-- End Interaction Panel -->
-      <!-- Row to hold sprite description text -->
-      <div id="spriteDescription" class="row" style>
-      <div class="col-sm-12">
-        <div class="card">
-          <div class="card-body">
-            <div id="title_sprite" class="card-title drinksText"></div>
-            <div id="subTitle_sprite" class="card-subtitle drinksText"></div>
-            <div id="description_sprite" class="card-text drinksText"></div>
-            <a href="http://www.coca-cola.co.uk/drinks/sprite/sprite" class="btn btn-primary btn-responsive">Visit Sprite</a>
-          </div>
-        </div>
-      </div>
-      </div>
-      <!-- End sprite Description contents -->
-    <!-- Row to hold coke description text -->
-    <div id="cokeDescription" class="row" style>
-      <div class="col-sm-12">
-        <div class="card">
-          <div class="card-body">
-            <div id="title_coke" class="card-title drinksText"></div>
-            <div id="subTitle_coke" class="card-subtitle drinksText"></div>
-            <div id="description_coke" class="card-text drinksText"></div>
-            <a href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola" class="btn btn-primary btn-responsive">Visit Coke</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End coke Description contents -->
-    <!-- Row to hold drpepper description text -->
-    <div id="pepperDescription" class="row" style>
-      <div class="col-sm-12">
-        <div class="card">
-          <div class="card-body">
-            <div id="title_pepper" class="card-title drinksText"></div>
-            <div id="subTitle_pepper" class="card-subtitle drinksText"></div>
-            <div id="description_pepper" class="card-text drinksText"></div>
-            <a href="http://www.coca-cola.co.uk/drinks/drpepper" class="btn btn-primary btn-responsive">Visit Dr Pepper</a>
-          </div>
-        </div>
-      </div>
-    </div>
-      <!-- End drpepper Description contents -->
+          <!-- End drpepper Description contents -->
+      </div> <!-- END OF MODELS PAGE -->
     </div> <!-- End 3D APP SPA CONTENTS -->
     <!-- Footer for 3dApp -->
     <nav class="navbar navbar-expand-sm footer navbar-fixed-bottom">

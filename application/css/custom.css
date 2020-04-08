@@ -122,8 +122,8 @@ There is plenty more styling to do than indicated here, in mobile it still defau
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-
-/* CSS rule to style the mobile logo */
+  /* Logo Content
+-------------------------------------------------- */
 .logo {
     margin-top: 3px;
     }
@@ -167,12 +167,17 @@ There is plenty more styling to do than indicated here, in mobile it still defau
     padding-top: 0px;
     padding-left: 3px;
     }
-    
+
+      /* Body Content
+-------------------------------------------------- */
 body {
     padding-top: 0px;
     padding-bottom: 0px;
     background-color: white;
 }
+
+  /* Home page Content
+-------------------------------------------------- */
 .main_contents {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -195,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
 }
 #main_text {
-    float: left;
+    float: center;
     margin: 5%;
     width: 90%;
     display: block;
@@ -268,6 +273,9 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center;
     background-size: cover;
 }
+
+  /* Structure Content
+-------------------------------------------------- */
 .card {
     border: 0px solid white;
     border-radius: .25rem;
@@ -366,9 +374,47 @@ X3D, x3d {
 .col-sm-6 {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
+  /* About Content
+-------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+    background-color: #777;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
 
 
 
@@ -494,8 +540,7 @@ body {
 }
 .main_contents {
     margin-top: 0px;
-    margin-bottom: 1
-    0px;
+    margin-bottom: 10px;
 }
 /* CSS rule to style the footer */
 .footer {
