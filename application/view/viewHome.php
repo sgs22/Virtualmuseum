@@ -80,10 +80,15 @@
         <div class="row">
           <div class="col-sm-12">
             <div id="main_3d_image" class="responsive">
-              <div class="col-md p-lg-5 mx-auto my-5">
-                <h1 class="display-4 font-weight-normal">Apple Virtual Museum</h1>
-                <p class="lead font-weight-normal">Looking into the history of Apples msot iconic products.</p>
-                <a class="btn btn-outline-secondary" href="#">Take a tour</a>
+              <div class="col-8 mx-auto">
+                <div class="text-center" style="color: white;
+                                                padding-top: 350px;
+                                                text-shadow: 1.5px 1.5px black;"
+                                                >
+                  <h1 class="display-4 font-weight-normal">Apple Virtual Museum</h1>
+                  <p class="lead font-weight-normal">Looking into the history of Apples msot iconic products.</p>
+                  <a class="btn btn-outline-secondary" href="#" style="color: white; border-color: white;">Take a tour</a>
+                </div>
               </div>
             </div>
           </div>
@@ -159,7 +164,7 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="first-slide" src="application/assets/images/site_images/imac_sideview.png" alt="First slide">
+              <img class="first-slide" src="application/assets/images/render_images/ipodRender.png" alt="First slide">
               <div class="container">
                 <div class="carousel-caption text-left">
                   <h1>Explore the Virtual Museum</h1>
@@ -169,7 +174,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img class="second-slide" src="application/assets/images/site_images/Apple_II_IMG_4223" alt="Second slide">
+              <img class="second-slide" src="application/assets/images/render_images/iPhoneRender.png" alt="Second slide">
               <div class="container">
                 <div class="carousel-caption">
                   <h1>Learn Apple's History</h1>
@@ -179,7 +184,7 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img class="third-slide" src="application/assets/images/site_images/Steve-Jobs-garage" alt="Third slide">
+              <img class="third-slide" src="application/assets/images/render_images/macintoshRender.png" alt="Third slide">
               <div class="container">
                 <div class="carousel-caption text-right">
                   <h1>This is an example of how a virtual Museum is created</h1>

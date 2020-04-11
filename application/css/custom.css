@@ -198,6 +198,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     background-position: center;
     background-size: cover;
+    object-fit: cover;
+    opacity: 0.8;
 }
 #main_text {
     float: center;
@@ -414,6 +416,27 @@ X3D, x3d {
   .marketing .col-lg-4 p {
     margin-right: .75rem;
     margin-left: .75rem;
+  }
+
+  .first-slide {
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .second-slide {
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .third-slide {
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
   }
 
 
