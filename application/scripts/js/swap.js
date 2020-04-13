@@ -141,3 +141,8 @@ function changeColor(newColor) {
     var elem = document.getElementById('para1');
     elem.style.color = newColor;
 }
+
+function animateScroll() {
+	window.scroll({ top: 700, left: 0, behavior: 'smooth' });
+  }
+ 

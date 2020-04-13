@@ -30,6 +30,8 @@ Bootstrapbay Bootstrap Tutorial Part 11 — CSS Modifications to Navbar and Butt
 There is plenty more styling to do than indicated here, in mobile it still defaults to Bootstrap CSS on dropdown!
 */
 /* LOGO */
+
+
 .fa-apple.fa-retro {
     transition: .5s ease-out color;
     -webkit-background-clip: text;
@@ -171,6 +173,7 @@ There is plenty more styling to do than indicated here, in mobile it still defau
       /* Body Content
 -------------------------------------------------- */
 body {
+    scroll-behavior: smooth;
     padding-top: 0px;
     padding-bottom: 0px;
     background-color: white;
@@ -251,6 +254,19 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center;
     background-size: cover;
 }
+#home_img_2:hover {
+    opacity: 0.8;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
 #home_img_3 {
     background-image: url(../assets/images/site_images/Apple_II_IMG_4223.jpeg); 
     background-repeat: no-repeat;
