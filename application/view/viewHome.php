@@ -314,7 +314,7 @@
             <!-- Column to hold Image Gallery -->
             <div class="col-sm-6">
               <!-- Row to hold sprite description text -->
-                <div id="spriteDescription" class="row" style>
+              <div id="spriteDescription" class="row" style>
                 <div class="col-sm-12">
                   <div class="card">
                     <div class="card-body">
@@ -353,96 +353,94 @@
                       </div>
                     </div>
                   </div>
+                </div> <!-- End drpepper Description contents -->
+              </div> <!-- Ends row x3d Model and Gallery -->
+            </div> <!-- ENDS Column to hold Image Gallery -->
+          </div> <!-- End x3d Models and Gallery --> 
+          <div id="interaction" class="row" style> <!-- Start Interaction Panels -->
+            <!-- Column for camera view controls -->
+            <div class="col-sm-3">
+              <div class="card text-left">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Camera Views</a>
+                    </li>
+                  </ul>
                 </div>
-            </div> <!-- End drpepper Description contents -->
-          </div>
-          <!-- Ends row x3d Model and Gallery -->
-        </div>
-        <!-- End x3d Models and Gallery -->  
-        <!-- Start Interaction Panels NEEDS TO BE DONE!!!-->
-        <div id="interaction" class="row" style>
-          <!-- Column for camera view controls -->
-          <div class="col-sm-3">
-            <div class="card text-left">
-              <div class="card-header">
-                <ul class="nav nav-tabs card-header-tabs">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Camera Views</a>
-                  </li>
-                </ul>
+                <div class="card-body">
+                  <div class="card-Title x3dCamera_Subtitle drinksText"></div>
+                  <a href="#" class="btn btn-primary btn-responsive" onclick="cameraFront();">
+                    Default View
+                  </a>
+                  <a href="#" class="btn btn-secondary btn-responsive" onclick="cameraSide();">
+                    Side View
+                  </a> 
+                  <a href="#" class="btn btn-outline-dark disabled btn-responsive">
+                    Disable
+                  </a>
+                  <div class="card-text x3dCameraDescription drinksText"></div>
+                </div>
               </div>
-              <div class="card-body">
-                <div class="card-Title x3dCamera_Subtitle drinksText"></div>
-                <a href="#" class="btn btn-primary btn-responsive" onclick="cameraFront();">
-                  Default View
-                </a>
-                <a href="#" class="btn btn-secondary btn-responsive" onclick="cameraSide();">
-                  Side View
-                </a> 
-                <a href="#" class="btn btn-outline-dark disabled btn-responsive">
-                  Disable
-                </a>
-                <div class="card-text x3dCameraDescription drinksText"></div>
+            </div>
+            <!-- Column for Animation controls -->
+            <div class="col-sm-3">
+              <div class="card text-left">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Animation</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                  <div class="card-Title x3dAnimationSubtitle drinksText"></div>
+                  <a href="#" class="btn btn-primary btn-responsive" onclick="spin();">
+                    Rotate X axis
+                  </a>
+                  <a href="#" class="btn btn-secondary btn-responsive" onclick="spin();">
+                    Rotate Y axis
+                  </a> 
+                  <a href="#" class="btn btn-outline-dark disabled btn-responsive">
+                    Stop
+                  </a>
+                  <div class="card-text x3dAnimationDescription drinksText"></div>
+                </div>
               </div>
             </div>
           </div>
-          <!-- Column for Animation controls -->
-          <div class="col-sm-3">
-            <div class="card text-left">
-              <div class="card-header">
-                <ul class="nav nav-tabs card-header-tabs">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Animation</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="card-body">
-                <div class="card-Title x3dAnimationSubtitle drinksText"></div>
-                <a href="#" class="btn btn-primary btn-responsive" onclick="spin();">
-                  Rotate X axis
-                </a>
-                <a href="#" class="btn btn-secondary btn-responsive" onclick="spin();">
-                  Rotate Y axis
-                </a> 
-                <a href="#" class="btn btn-outline-dark disabled btn-responsive">
-                  Stop
-                </a>
-                <div class="card-text x3dAnimationDescription drinksText"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row"> <!-- Second Row -->
-          <!-- Column for Render controls -->
-          <div class="col-sm-4">
-            <div class="card text-left">
-              <div class="card-header">
-                <ul class="nav nav-tabs card-header-tabs">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Render</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Lighting</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="card-body">
-                <div class="card-Title x3dRenderSubtitle drinksText"></div>
-                <a href="#" class="btn btn-primary btn-responsive" onclick="">
-                  Polygon
-                </a>
-                <a href="#" class="btn btn-secondary btn-responsive" onclick="wireframe();">
-                  Wireframe
-                </a> 
-                <a href="#" class="btn btn-outline-dark disabled btn-responsive">
-                  HeadLight
-                </a>
-                <div class="card-text x3dAnimationDescription drinksText"></div>
+          <div class="row"> <!-- Second Row Interaction Panel -->
+            <!-- Column for Render controls -->
+            <div class="col-sm-4">
+              <div class="card text-left">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Render</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Lighting</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body">
+                  <div class="card-Title x3dRenderSubtitle drinksText"></div>
+                  <a href="#" class="btn btn-primary btn-responsive" onclick="">
+                    Polygon
+                  </a>
+                  <a href="#" class="btn btn-secondary btn-responsive" onclick="wireframe();">
+                    Wireframe
+                  </a> 
+                  <a href="#" class="btn btn-outline-dark disabled btn-responsive">
+                    HeadLight
+                  </a>
+                  <div class="card-text x3dAnimationDescription drinksText"></div>
+                </div>
               </div>
             </div>
-          </div>
-        </div> <!-- End Interaction Panel -->
-      </div> <!-- END OF MODELS PAGE -->
+          </div> <!-- End Interaction Panel Second Row -->
+        </div> <!-- END OF MODELS PAGE --> 
+      </div> 
     </div> <!-- End 3D APP SPA CONTENTS -->
     <!-- Footer for 3dApp -->
     <nav class="navbar navbar-expand-sm footer navbar-fixed-bottom">
