@@ -277,7 +277,7 @@
                     <div class="model3D">
                       <x3d class="model3D">
                         <scene>
-                          <inline url="application/assets/x3d/sprite.x3d"> </inline>
+                          <inline url="application/assets/x3d/Macintosh.x3d"> </inline>
                         </scene>
                       </x3d>
                     </div>
@@ -290,7 +290,7 @@
                     <div class="model3D">
                       <x3d class="model3D">
                         <scene>
-                          <inline url="application/assets/x3d/sprite.x3d"> </inline>
+                          <inline url="application/assets/x3d/iPhone.x3d"> </inline>
                         </scene>
                       </x3d>
                     </div>
