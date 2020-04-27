@@ -233,9 +233,14 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url(../assets/images/site_images/imac_sideview.png); 
     background-repeat: no-repeat;
     height: 600px;
-    width: 100%;
     background-position: center;
     background-size: cover;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+}
+#home_img_1:hover {
+
 }
 #home_imgtext_1 {
     float: center;
@@ -257,16 +262,6 @@ h1, h2, h3, h4, h5, h6 {
 #home_img_2:hover {
     opacity: 0.8;
 }
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
 #home_img_3 {
     background-image: url(../assets/images/site_images/Apple_II_IMG_4223.jpeg); 
     background-repeat: no-repeat;
@@ -291,6 +286,76 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center;
     background-size: cover;
 }
+
+/* DEMO 3 ============================== */
+#imgoverlay {
+    background: rgba(0, 0, 0, 0.8);
+}
+#imgoverlay:hover {
+    background: rgba(0, 0, 0, 1);
+}
+
+.hover-3::after {
+    content: '';
+    width: calc(100% - 3rem);
+    height: calc(100% - 3rem);
+    border: 1px solid #fff;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    z-index: 90;
+    transition: all 0.3s;
+    transform: scale(1.1);
+    opacity: 0;
+    display: block;
+    opacity: 0;
+  }
+  
+  .hover-3-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: 99;
+  }
+  
+  .hover-3-description {
+    opacity: 0;
+    transform: scale(1.3);
+    transition: all 0.3s;
+  }
+  
+  .hover-3 img {
+    width: 110%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hover-3 .hover-overlay {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  
+  .hover-3:hover img {
+    width: 100%;
+  }
+  
+  .hover-3:hover::after {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .hover-3:hover .hover-3-description {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .hover-3:hover .hover-overlay {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
 
   /* Structure Content
 -------------------------------------------------- */
@@ -371,11 +436,11 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .model3D  {
-    background-color: rgba(255, 255, 255, 0.0); /* Adjust the transparency to bring the color forward */
+    background-color: rgba(0, 0, 0, 0); /* Adjust the transparency to bring the color forward */
     border-radius: 5px;
     border: 0px solid rgba(0, 0, 0, 1.0);
     padding: 2px;
-    height: 500px;
+    height: 700px;
 }
 
 X3D, x3d {
@@ -394,6 +459,10 @@ X3D, x3d {
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.spriteDescription {
+    padding-top: 200px;
 }
 
   /* About Content

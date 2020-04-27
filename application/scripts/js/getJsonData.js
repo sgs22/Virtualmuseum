@@ -38,12 +38,12 @@ $(document).ready(function(){
 		$('#subTitle_sprite').html('<h3>' + jsonObj.pageTextData[5].subTitle + '</h3>');
 		$('#description_sprite').html('<p>' + jsonObj.pageTextData[5].description + '</p>');		
 
-		//Get the pepper main text data
-		$('#x3dModelTitle_pepper').html('<h2>' + jsonObj.pageTextData[6].x3dModelTitle + '<h2>');
-		$('#x3dCreationMethod_pepper').html('<p>' + jsonObj.pageTextData[6].x3dCreationMethod + '<p>');
- 		$('#title_pepper').html('<h2>' + jsonObj.pageTextData[6].title + '<h2>');
-		$('#subTitle_pepper').html('<h3>' + jsonObj.pageTextData[6].subTitle + '</h3>');
-		$('#description_pepper').html('<p>' + jsonObj.pageTextData[6].description + '</p>');
+		//Get the Macintosh main text data
+		$('#x3dModelTitle_macintosh').html('<h2>' + jsonObj.pageTextData[6].x3dModelTitle + '<h2>');
+		$('#x3dCreationMethod_macintosh').html('<p>' + jsonObj.pageTextData[6].x3dCreationMethod + '<p>');
+ 		$('#title_macintosh').html('<h2>' + jsonObj.pageTextData[6].title + '<h2>');
+		$('#subTitle_macintosh').html('<h3>' + jsonObj.pageTextData[6].subTitle + '</h3>');
+		$('#description_macintosh').html('<p>' + jsonObj.pageTextData[6].description + '</p>');
 		
 		//Get the gallery contents data
 		$('.title_gallery').html('<h2>' + jsonObj.pageTextData[7].galleryTitle + '<h2>');
