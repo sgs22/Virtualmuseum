@@ -268,6 +268,9 @@
                     <li class="nav-item">
                       <a id="navMacintosh" class="nav-link" href="#">Macintosh</a>
                     </li>
+                    <li class="nav-item">
+                      <a id="iPod" class="nav-link" href="#">iPod</a>
+                    </li>
                   </ul>
                 </div>
                 <!-- Bootstrap 4 card body tp hold info about x3d model -->
@@ -298,6 +301,7 @@
                     </div>
                     <div id="x3dCreationMethod_coke" class="card-title drinksText"></div>
                   </div>
+                  <!-- Macintosh Model -->
                   <div id="macintosh" style="display: none;">
                     <div id="x3dModelTitle_macintosh" class="card-title drinksText"></div>
                     <!-- Place x3D Model here -->
@@ -317,7 +321,7 @@
               <!-- Row to hold sprite description text -->
                 <div id="spriteDescription" class="row" style>
                   <div class="col-sm-12">
-                    <div class="card" >
+                    <div class="card" style="padding-top: 200px;">
                       <div class="card-body">
                         <div id="title_sprite" class="card-title drinksText"></div>
                         <div id="subTitle_sprite" class="card-subtitle drinksText"></div>

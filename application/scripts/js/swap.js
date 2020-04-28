@@ -68,6 +68,22 @@ function selectPage() {
 		$("#x3dCreationMethod_macintosh").show(); 
 	});
 
+	$('#navSprite').click(function(){
+		$('#home').hide();
+		$('#about').hide();
+		$('#models').show();
+		$('#interaction').show(); 
+		$('#cokeDescription').hide();
+		$('#spriteDescription').show(); 
+		$('#macintoshDescription').hide();
+		$("#x3dModelTitle_coke").hide();
+		$("#x3dModelTitle_sprite").show();
+		$("#x3dModelTitle_macintosh").hide();
+		$("#x3dCreationMethod_coke").hide();
+		$("#x3dCreationMethod_sprite").show();
+		$("#x3dCreationMethod_macintosh").hide(); 
+	});
+
 }
 
 function cokeDescription() {
