@@ -260,16 +260,16 @@
                 <div class="card-header">
                   <ul class="nav nav-tabs card-header-tabs">
                     <li class="nav-item">
-                      <a id="navSprite" class="nav-link active" href="#">Sprite</a>
+                      <a id="#model0" class="nav-link active" href="#">iMac</a>
                     </li>
                     <li class="nav-item">
-                      <a id="navCoke" class="nav-link" href="#">Coca Cola</a>
+                      <a id="#model1" class="nav-link" href="#">iPhone</a>
                     </li>
                     <li class="nav-item">
-                      <a id="navMacintosh" class="nav-link" href="#">Macintosh</a>
+                      <a id="#model2" class="nav-link" href="#">Macintosh</a>
                     </li>
                     <li class="nav-item">
-                      <a id="iPod" class="nav-link" href="#">iPod</a>
+                      <a id="#model3" class="nav-link" href="#">iPod</a>
                     </li>
                   </ul>
                 </div>
@@ -280,9 +280,9 @@
                     <div id="x3dModelTitle_sprite" class="card-title drinksText"></div>
                     <!-- Place x3D Model here -->
                     <div class="model3D">
-                      <x3d class="model3D">
+                      <x3d id="model">
                         <scene>
-                          <inline url="application/assets/x3d/sprite.x3d"> </inline>
+                          <inline url="x3domUrl" nameSpaceName="model" mapDEFToID="true"></inline>
                         </scene>
                       </x3d>
                     </div>
@@ -500,5 +500,7 @@
     <!-- JavaScript and PHP based Gallery generator  -->
     <script src="application/scripts/js/gallery_generator.js"></script>
     <script src="application/scripts/js/getJsonData.js"></script>
+    <script src="application/scripts/js/get3Dmodels.js"></script>
+    <script src="application/scripts/js/modelInteractions.js"></script>
   </body>
 </html>
