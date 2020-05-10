@@ -61,7 +61,7 @@
 			"releasePrice": "n/a",
 			"soundUrl": "link",
 			"videoUrl": "link",
-			"x3domUrl": "application/assets/x3d/iMacG3.x3d"
+			"x3domUrl": "../assignment/application/assets/x3d/iMacG3.x3d"
 		},
 		{
 			"name": "iPhone",
@@ -73,7 +73,7 @@
 			"releasePrice": "n/a",
 			"soundUrl": "link",
 			"videoUrl": "link",
-			"x3domUrl": "application/assets/x3d/iPhone.x3d"
+			"x3domUrl": "../assignment/application/assets/x3d/iPhone.x3d"
 		},
 		{
 			"name": "Macintosh",
@@ -85,7 +85,7 @@
 			"releasePrice": "n/a",
 			"soundUrl": "link",
 			"videoUrl": "link",
-			"x3domUrl": "application/assets/x3d/Macintosh.x3d"
+			"x3domUrl": "../assignment/application/assets/x3d/Macintosh.x3d"
 		},
 		{
 			"name": "iPod",
@@ -97,9 +97,7 @@
 			"releasePrice": "n/a",
 			"soundUrl": "link",
 			"videoUrl": "link",
-			"x3domUrl": "application/assets/x3d/iPod.x3d"
+			"x3domUrl": "../assignment/application/assets/x3d/iPod.x3d"
 		}
-		
-
 	]
 }

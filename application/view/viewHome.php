@@ -257,32 +257,20 @@
             <!-- Column to hold x3d Model -->
             <div class="col-sm-8">
               <div class="card text-left">
-                <div class="card-header">
-                  <ul class="nav nav-tabs card-header-tabs">
-                    <li class="nav-item">
-                      <a id="#model0" class="nav-link active" href="#">iMac</a>
-                    </li>
-                    <li class="nav-item">
-                      <a id="#model1" class="nav-link" href="#">iPhone</a>
-                    </li>
-                    <li class="nav-item">
-                      <a id="#model2" class="nav-link" href="#">Macintosh</a>
-                    </li>
-                    <li class="nav-item">
-                      <a id="#model3" class="nav-link" href="#">iPod</a>
-                    </li>
-                  </ul>
-                </div>
                 <!-- Bootstrap 4 card body tp hold info about x3d model -->
                 <div class="card-body">
                   <!-- Sprite X3D Model -->
-                  <div id="sprite" style="display: block">
-                    <div id="x3dModelTitle_sprite" class="card-title drinksText"></div>
+                  <div id="models" style="display: block">
+                    <button id="model0" type="button" onclick="reply_click(this.id)">iMac</button>
+                    <button id="model1" type="button" onclick="reply_click(this.id)">iPhone</button>
+                    <button id="model2" type="button" onclick="reply_click(this.id)">Macintosh</button>
+                    <button id="model3" type="button" onclick="reply_click(this.id)">iPod</button>
+                    <!--<div id="x3dModelTitle_sprite" class="card-title drinksText"></div>-->
                     <!-- Place x3D Model here -->
                     <div class="model3D">
                       <x3d id="model">
                         <scene>
-                          <inline url="x3domUrl" nameSpaceName="model" mapDEFToID="true"></inline>
+                          <inline id="x3domUrl" nameSpaceName="model" mapDEFToID="true"></inline>
                         </scene>
                       </x3d>
                     </div>
@@ -363,7 +351,7 @@
             </div> <!-- ENDS Column to hold Description -->
           <div id="interaction" class="row" style> <!-- Start Interaction Panels -->
             <!-- Column for camera view controls -->
-            <div class="col-sm-3">
+            <div class="col-sm-4">
               <div class="card text-left">
                 <div class="card-header">
                   <ul class="nav nav-tabs card-header-tabs">
@@ -388,7 +376,7 @@
               </div>
             </div>
             <!-- Column for Animation controls -->
-            <div class="col-sm-3">
+            <div class="col-sm-4">
               <div class="card text-left">
                 <div class="card-header">
                   <ul class="nav nav-tabs card-header-tabs">
@@ -412,9 +400,6 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row"> <!-- Second Row Interaction Panel -->
-            <!-- Column for Render controls -->
             <div class="col-sm-4">
               <div class="card text-left">
                 <div class="card-header">
