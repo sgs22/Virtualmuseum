@@ -259,14 +259,13 @@
               <div class="card text-left">
                 <!-- Bootstrap 4 card body tp hold info about x3d model -->
                 <div class="card-body">
-                  <!-- Sprite X3D Model -->
+                  <!-- Button to switch object X3D Model -->
                   <div id="models" style="display: block">
-                    <button id="model0" type="button" onclick="reply_click(this.id)">iMac</button>
-                    <button id="model1" type="button" onclick="reply_click(this.id)">iPhone</button>
-                    <button id="model2" type="button" onclick="reply_click(this.id)">Macintosh</button>
-                    <button id="model3" type="button" onclick="reply_click(this.id)">iPod</button>
-                    <!--<div id="x3dModelTitle_sprite" class="card-title drinksText"></div>-->
-                    <!-- Place x3D Model here -->
+                    <button id="model0" type="button" class="btn btn-dark" onclick="reply_click(this.id)">iMac</button>
+                    <button id="model1" type="button" class="btn btn-dark" onclick="reply_click(this.id)">iPhone</button>
+                    <button id="model2" type="button" class="btn btn-dark" onclick="reply_click(this.id)">Macintosh</button>
+                    <button id="model3" type="button" class="btn btn-dark" onclick="reply_click(this.id)">iPod</button>
+                    <!-- Place Object Model here -->
                     <div class="model3D">
                       <x3d id="model">
                         <scene>
@@ -276,79 +275,38 @@
                     </div>
                     <div id="x3dCreationMethod_sprite" class="card-title drinksText"></div>
                   </div>
-                  <!-- Coke X3D Model -->
-                  <div id="coke" style="display: none;">
-                    <div id="x3dModelTitle_coke" class="card-title drinksText"></div>
-                    <!-- Place x3D Model here -->
-                    <div class="model3D">
-                      <x3d class="model3D">
-                        <scene>
-                          <inline url="application/assets/x3d/iPhone.x3d"> </inline>
-                        </scene>
-                      </x3d>
-                    </div>
-                    <div id="x3dCreationMethod_coke" class="card-title drinksText"></div>
-                  </div>
-                  <!-- Macintosh Model -->
-                  <div id="macintosh" style="display: none;">
-                    <div id="x3dModelTitle_macintosh" class="card-title drinksText"></div>
-                    <!-- Place x3D Model here -->
-                    <div class="model3D">
-                      <x3d class="model3D">
-                        <scene>
-                          <inline url="application/assets/x3d/Macintosh.x3d"> </inline>
-                        </scene>
-                      </x3d>
-                    </div>
-                    <div id="x3dCreationMethod_macintosh" class="card-title drinksText"></div>
-                  </div>
                 </div>
               </div>
             </div> <!-- End x3d Models  --> 
             <div class="col-sm-4"> <!-- Column to hold Description -->
-              <!-- Row to hold sprite description text -->
-                <div id="spriteDescription" class="row" style>
+              <!-- Row to hold description text -->
+                <div id="models" class="row" style>
                   <div class="col-sm-12">
-                    <div class="card" style="padding-top: 200px;">
-                      <div class="card-body">
-                        <div id="title_sprite" class="card-title drinksText"></div>
-                        <div id="subTitle_sprite" class="card-subtitle drinksText"></div>
-                        <div id="description_sprite" class="card-text drinksText"></div>
-                        <a href="http://www.coca-cola.co.uk/drinks/sprite/sprite" class="btn btn-primary btn-responsive">Visit Sprite</a>
+                    <div class="card" style="padding-top: 50px;">
+                      <div class="card-body modelDescription">
+                        <div id="name" class="card-title modelTitle"></div>
+                        <div class="subTitle-header">Lead Designer: </div>
+                        <div id="designedBy" class="card-subtitle modelSubTitle"></div>
+                        <div class="subTitle-header">Model Number: </div>
+                        <div id="modelNumber" class="card-subtitle modelSubTitle"></div>
+                        <div class="subTitle-header">Date of Production: </div>
+                        <div id="productionDate" class="card-subtitle modelSubTitle"></div>
+                        <div class="subTitle-header">Price at Release: </div>
+                        <div id="releasePrice" class="card-subtitle modelSubTitle"></div>
+                        <div class="subTitle-header">Desciption: </div>
+                        <div id="description" class="card-text modelText"></div>
+                        <div id="soundUrl" class="card-text playBackAudio"></div>
+                        <button id="" type="button" class="btn btn-dark videoButton">X3D Model</button>
+                        <button id="" type="button" class="btn btn-dark imgButton">Video</button>
+                        <button id="" type="button" class="btn btn-dark x3dButton">Image</button>
                       </div>
                     </div>
                   </div>
                 </div>
-              <!-- End sprite Description contents -->
-              <!-- Row to hold coke description text -->
-                <div id="cokeDescription" class="row" style>
-                  <div class="col-sm-12">
-                    <div class="card" style="padding-top: 200px;">
-                      <div class="card-body">
-                        <div id="title_coke" class="card-title drinksText"></div>
-                        <div id="subTitle_coke" class="card-subtitle drinksText"></div>
-                        <div id="description_coke" class="card-text drinksText"></div>
-                        <a href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola" class="btn btn-primary btn-responsive">Visit Coke</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- End coke Description contents -->
-                <!-- Row to hold drpepper description text -->
-                <div id="macintoshDescription" class="row" style>
-                  <div class="col-sm-12">
-                    <div class="card" style="padding-top: 200px;">
-                      <div class="card-body">
-                        <div id="title_macintosh" class="card-title drinksText"></div>
-                        <div id="subTitle_macintosh" class="card-subtitle drinksText"></div>
-                        <div id="description_macintosh" class="card-text drinksText"></div>
-                        <a href="http://www.coca-cola.co.uk/drinks/drpepper" class="btn btn-primary btn-responsive">Visit Macintosh</a>
-                      </div>
-                    </div>
-                  </div>
-                </div> <!-- End drpepper Description contents -->
-              </div> <!-- Ends row x3d Model and Gallery -->
+              <!-- End Description contents -->
+
             </div> <!-- ENDS Column to hold Description -->
+          </div> <!-- Ends row x3d Model and Gallery -->
           <div id="interaction" class="row" style> <!-- Start Interaction Panels -->
             <!-- Column for camera view controls -->
             <div class="col-sm-4">

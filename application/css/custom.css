@@ -239,9 +239,6 @@ h1, h2, h3, h4, h5, h6 {
     top: 50%;
     left: 50%;
 }
-#home_img_1:hover {
-
-}
 #home_imgtext_1 {
     float: center;
     margin: 5%;
@@ -465,6 +462,67 @@ X3D, x3d {
     padding-top: 200px;
 }
 
+.modelDescription {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-right-width: 10px;
+    padding-right: 20px;
+    margin-right: 35px;
+}
+
+.title-header {
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.subTitle-header {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 3px;
+}
+
+.text-header {
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left;
+    margin-top: 3px;
+}
+
+.modelTitle {
+    font-size: 35px;
+    text-align: center;
+}
+
+.modelSubTitle {
+    font-size: 20px;
+    text-align: left;
+}
+
+.modelText {
+    font-size: 15px;
+    text-align: left;
+}
+
+.playBackAudio {
+    margin-top: 35px;
+}
+
+.videoButton {
+    margin-top: 35px;
+    margin-left: 100px;
+}
+
+.imgButton {
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+.x3dButton {
+    margin-top: 35px;
+    margin-left: 10px;
+}
   /* About Content
 -------------------------------------------------- */
 /* Carousel base class */

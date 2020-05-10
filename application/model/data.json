@@ -53,13 +53,13 @@
 	"models": [
 		{
 			"name": "iMac G3",
-			"description": "MOST COLOURFUL ImAC ever blah blah blah",
+			"description": "The iMac G3, originally released as the iMac, is a series of Macintosh personal computers designed, manufactured, and sold by Apple Computer, Inc. from 1998 to 2003. Noted for its innovative enclosure via the use of translucent and brightly colored plastics, it was the first consumer-facing Apple product to debut under the recently returned interim CEO Steve Jobs. It was updated over time with new hardware and colors, until being supplanted by the iMac G4 and eMac.",
 			"designedBy": "Jony Ive",
 			"imageUrl": "link",
 			"modelNumber": "n/a",
 			"productionDate": "n/a",
 			"releasePrice": "n/a",
-			"soundUrl": "link",
+			"soundUrl": "../assignment/application/assets/audio/American_Teen.mp3",
 			"videoUrl": "link",
 			"x3domUrl": "../assignment/application/assets/x3d/iMacG3.x3d"
 		},

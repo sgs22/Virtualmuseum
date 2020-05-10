@@ -48,12 +48,6 @@ $(document).ready(function() {
         $('.obj3D').fadeOut(500);
         $('.objSound').fadeOut(500);	  
         });
-    $('#objSound').click(function(){
-        $('.objSound').delay(500).fadeIn(500);
-        $('.obj3D').fadeOut(500);
-        $('.objVideo').fadeOut(500);
-        $('.objImage').fadeOut(500);	  
-        });
     
     function update(objID) {	
 	
