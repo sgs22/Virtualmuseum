@@ -57,15 +57,11 @@
             <a id="navHome" class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a id="navAbout" class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom"
-            title="About Web 3D Applications" data-content="3D Apps is a final year and postgraduate module">About</a>
+            <a id="navAbout" class="nav-link" href="#">About</a>
           </li>
           <!-- Dropdown -->
           <li class="nav-item">
-            <a id="navModels" class="nav-link" href="#" id="navbardrop" data-toggle="popover" data-trigger="hover"
-            data-placement="bottom" title data-content="Three Models: Coke, Sprite and Dr Pepper" data-original-title="X3D Models">
-            Models
-            </a>
+            <a id="navModels" class="nav-link" href="#" id="navbardrop">Models</a>
           </li>
             <li class="nav-item">
               <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
@@ -261,19 +257,30 @@
                 <div class="card-body">
                   <!-- Button to switch object X3D Model -->
                   <div id="models" style="display: block">
-                    <button id="model0" type="button" class="btn btn-dark" onclick="reply_click(this.id)">iMac</button>
-                    <button id="model1" type="button" class="btn btn-dark" onclick="reply_click(this.id)">iPhone</button>
-                    <button id="model2" type="button" class="btn btn-dark" onclick="reply_click(this.id)">Macintosh</button>
-                    <button id="model3" type="button" class="btn btn-dark" onclick="reply_click(this.id)">iPod</button>
-                    <!-- Place Object Model here -->
-                    <div class="model3D">
-                      <x3d id="model">
-                        <scene>
-                          <inline id="x3domUrl" nameSpaceName="model" mapDEFToID="true"></inline>
-                        </scene>
-                      </x3d>
+                    <div id="modelSelector" class="text-center">
+                      <button id="model0" type="button" class="btn btn-outline-dark btn-lg" onclick="reply_click(this.id)">iMac</button>
+                      <button id="model1" type="button" class="btn btn-outline-dark btn-lg" onclick="reply_click(this.id)">iPhone</button>
+                      <button id="model2" type="button" class="btn btn-outline-dark btn-lg" onclick="reply_click(this.id)">Macintosh</button>
+                      <button id="model3" type="button" class="btn btn-outline-dark btn-lg" onclick="reply_click(this.id)">iPod</button>
                     </div>
-                    <div id="x3dCreationMethod_sprite" class="card-title drinksText"></div>
+                      <!-- Place Object Model here -->
+                    <div style="display:block;">
+                      <div class="obj3D">
+                        <div class="model3D">
+                          <x3d id="model">
+                            <scene>
+                              <inline id="x3domUrl" nameSpaceName="model" mapDEFToID="true"></inline>
+                            </scene>
+                          </x3d>
+                        </div>
+                      </div>
+                      <div class="objImage">
+                        <div id="imageUrl" style="text-align: center !important;"></div>
+                      </div>
+                      <div class="objVideo">
+                        <div id="videoUrl"></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -286,19 +293,22 @@
                       <div class="card-body modelDescription">
                         <div id="name" class="card-title modelTitle"></div>
                         <div class="subTitle-header">Lead Designer: </div>
-                        <div id="designedBy" class="card-subtitle modelSubTitle"></div>
+                          <div id="designedBy" class="card-subtitle modelSubTitle"></div>
                         <div class="subTitle-header">Model Number: </div>
-                        <div id="modelNumber" class="card-subtitle modelSubTitle"></div>
+                          <div id="modelNumber" class="card-subtitle modelSubTitle"></div>
                         <div class="subTitle-header">Date of Production: </div>
-                        <div id="productionDate" class="card-subtitle modelSubTitle"></div>
+                          <div id="productionDate" class="card-subtitle modelSubTitle"></div>
                         <div class="subTitle-header">Price at Release: </div>
-                        <div id="releasePrice" class="card-subtitle modelSubTitle"></div>
-                        <div class="subTitle-header">Desciption: </div>
-                        <div id="description" class="card-text modelText"></div>
-                        <div id="soundUrl" class="card-text playBackAudio"></div>
-                        <button id="" type="button" class="btn btn-dark videoButton">X3D Model</button>
-                        <button id="" type="button" class="btn btn-dark imgButton">Video</button>
-                        <button id="" type="button" class="btn btn-dark x3dButton">Image</button>
+                          <div id="releasePrice" class="card-subtitle modelSubTitle"></div>
+                        <div class="subTitle-header">Description: </div>
+                          <div id="description" class="card-text modelText"></div>
+                        <div class="subTitle-header">Audio Accessibility: </div>
+                          <div id="soundUrl" class="card-text playBackAudio"></div>
+                        <div id="objSelector" class="text-center">
+                          <button id="obj3D" type="button" class="btn btn-dark x3dButton" onclick="reply_click(this.id)">X3D Model</button>
+                          <button id="objVideo" type="button" class="btn btn-dark videoButton" onclick="reply_click(this.id)">Video</button>
+                          <button id="objImage" type="button" class="btn btn-dark imgButton" onclick="reply_click(this.id)">Image</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -310,75 +320,76 @@
           <div id="interaction" class="row" style> <!-- Start Interaction Panels -->
             <!-- Column for camera view controls -->
             <div class="col-sm-4">
-              <div class="card text-left">
-                <div class="card-header">
-                  <ul class="nav nav-tabs card-header-tabs">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#">Camera Views</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-body">
-                  <div class="card-Title x3dCamera_Subtitle drinksText"></div>
-                  <a href="#" class="btn btn-primary btn-responsive" onclick="cameraFront();">
-                    Default View
-                  </a>
-                  <a href="#" class="btn btn-secondary btn-responsive" onclick="cameraSide();">
-                    Side View
-                  </a> 
-                  <a href="#" class="btn btn-outline-dark disabled btn-responsive">
-                    Disable
-                  </a>
-                  <div class="card-text x3dCameraDescription drinksText"></div>
+              <div class="interactionPanel">
+                <div class="card text-center">
+                  <div class="card-header text-center">
+                    <ul class="nav nav-tabs card-header-tabs text-center">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"  data-toggle="popover" data-trigger="hover"
+                            data-placement="top" title data-content="View the model at different angles" data-original-title="Camera Views:">Camera Views:</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card-body" style="background-color: rgba(0, 0, 0, 0.03);">
+                    <div class="card-Title"></div>
+                    <a href="#" class="btn btn-dark btn-responsive" onclick="cameraFront();">
+                      Default View
+                    </a>
+                    <a href="#" class="btn btn-dark btn-responsive" onclick="cameraSide();">
+                      Side View
+                    </a> 
+                    <a href="#" class="btn btn-dark btn-responsive">
+                      Disable
+                    </a>
+                    <div class="card-text x3dCameraDescription drinksText"></div>
+                  </div>
                 </div>
               </div>
             </div>
             <!-- Column for Animation controls -->
             <div class="col-sm-4">
-              <div class="card text-left">
-                <div class="card-header">
-                  <ul class="nav nav-tabs card-header-tabs">
+              <div class="card text-center">
+                <div class="card-header text-center">
+                  <ul class="nav nav-tabs card-header-tabs text-center">
                     <li class="nav-item">
-                      <a class="nav-link active" href="#">Animation</a>
+                      <a class="nav-link" href="#" data-toggle="popover" data-trigger="hover"
+                            data-placement="top" title data-content="Use these Toggles to animate the model" data-original-title="Animation:">Animation:</a>
                     </li>
                   </ul>
                 </div>
-                <div class="card-body">
-                  <div class="card-Title x3dAnimationSubtitle drinksText"></div>
-                  <a href="#" class="btn btn-primary btn-responsive" onclick="spin();">
+                <div class="card-body" style="background-color: rgba(0, 0, 0, 0.03);">
+                  <div class="card-Title"></div>
+                  <a href="#" class="btn btn-dark btn-responsive" onclick="spin();">
                     Rotate X axis
                   </a>
-                  <a href="#" class="btn btn-secondary btn-responsive" onclick="spin();">
+                  <a href="#" class="btn btn-dark btn-responsive" onclick="spin();">
                     Rotate Y axis
                   </a> 
-                  <a href="#" class="btn btn-outline-dark disabled btn-responsive">
+                  <a href="#" class="btn btn-dark btn-responsive">
                     Stop
                   </a>
-                  <div class="card-text x3dAnimationDescription drinksText"></div>
                 </div>
               </div>
             </div>
             <div class="col-sm-4">
-              <div class="card text-left">
-                <div class="card-header">
-                  <ul class="nav nav-tabs card-header-tabs">
+              <div class="card text-center">
+                <div class="card-header text-center">
+                  <ul class="nav nav-tabs card-header-tabs text-center">
                     <li class="nav-item">
-                      <a class="nav-link active" href="#">Render</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Lighting</a>
+                      <a class="nav-link" href="#" data-toggle="popover" data-trigger="hover"
+                            data-placement="top" title data-content="Render the model in different formats" data-original-title="Render/Lighting:">Render/Lighting:</a>
                     </li>
                   </ul>
                 </div>
-                <div class="card-body">
-                  <div class="card-Title x3dRenderSubtitle drinksText"></div>
-                  <a href="#" class="btn btn-primary btn-responsive" onclick="">
+                <div class="card-body" style="background-color: rgba(0, 0, 0, 0.03);">
+                  <div class="card-Title"></div>
+                  <a href="#" class="btn btn-dark btn-responsive" onclick="wireframe();">
                     Polygon
                   </a>
-                  <a href="#" class="btn btn-secondary btn-responsive" onclick="wireframe();">
+                  <a href="#" class="btn btn-dark btn-responsive" onclick="wireframe();">
                     Wireframe
                   </a> 
-                  <a href="#" class="btn btn-outline-dark disabled btn-responsive">
+                  <a href="#" class="btn btn-dark btn-responsive" onclick="">
                     HeadLight
                   </a>
                   <div class="card-text x3dAnimationDescription drinksText"></div>
@@ -390,24 +401,55 @@
       </div> 
     </div> <!-- End 3D APP SPA CONTENTS -->
     <!-- Footer for 3dApp -->
-    <nav class="navbar navbar-expand-sm footer navbar-fixed-bottom">
-      <div class="container-fluid">
-        <div class="navbar-text float-left copyright">
-            <p>
-              <span class="align-baseline">&copy 2020 Web 3D | 
-                <a style="color: white; "href="javascript:changeLook()">Dark Mode</a> | 
-                <a style="color: white; "href="javascript:changeBack()">Reset</a>
-              </span>
-            </p>
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <i class="fa fa-apple fa-retro fa-2x"></i>
+          <small class="d-block mb-3 text-muted">&copy; 2020 Web 3D</small>
         </div>
-        <div class="navbar-text float-right social">
-          <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
-          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-          <a href="#"><i class="fab fa-google-plus fa-2x"></i></a>
-          <a href="#"><i class="fab fa-github-square fa-2x"></i></a>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="javascript:changeLook()">Dark Mode</a></li>
+            <li><a class="text-muted" href="javascript:changeBack()">Standard</a></li>
+            <li><a class="text-muted" href="#">Team feature</a></li>
+            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+            <li><a class="text-muted" href="#">Another one</a></li>
+            <li><a class="text-muted" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Resource</a></li>
+            <li><a class="text-muted" href="#">Resource name</a></li>
+            <li><a class="text-muted" href="#">Another resource</a></li>
+            <li><a class="text-muted" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Social</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Business</a></li>
+            <li><a class="text-muted" href="#">Education</a></li>
+            <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+            <li><a href="#"><i class="fab fa-google-plus fa-2x"></i></a></li>
+            <li><a href="#"><i class="fab fa-github-square fa-2x"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Team</a></li>
+            <li><a class="text-muted" href="#">Locations</a></li>
+            <li><a class="text-muted" href="#">Privacy</a></li>
+            <li><a class="text-muted" href="#">Terms</a></li>
+          </ul>
         </div>
       </div>
-    </nav>
+    </footer>
+    <!-- END FOOTER -->
 
     <!-- Contact Modal -->
     <div class="modal fade" id="contactModal" style="display: none;" aria-hidden="true">

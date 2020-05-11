@@ -33,20 +33,17 @@ $(document).ready(function() {
     $('#obj3D').click(function(){
         $('.obj3D').delay(500).fadeIn(500);
         $('.objImage').fadeOut(500);
-        $('.objVideo').fadeOut(500);
-        $('.objSound').fadeOut(500);	  
+        $('.objVideo').fadeOut(500);	  
         });
     $('#objImage').click(function(){
         $('.objImage').delay(500).fadeIn(500);
         $('.obj3D').fadeOut(500);
-        $('.objVideo').fadeOut(500);
-        $('.objSound').fadeOut(500);	  
+        $('.objVideo').fadeOut(500);	  
         });
     $('#objVideo').click(function(){
         $('.objVideo').delay(500).fadeIn(500);
         $('.objImage').fadeOut(500);
-        $('.obj3D').fadeOut(500);
-        $('.objSound').fadeOut(500);	  
+        $('.obj3D').fadeOut(500);	  
         });
     
     function update(objID) {	
@@ -82,8 +79,8 @@ $(document).ready(function() {
 
             //grab the remaining media objects, e.g. audio, video, image
 		    $('#soundUrl').html('<audio width=100% controls>' + '<source src="' + jsonObj.models[objID].soundUrl + '"'+  ' type=' + '"audio/mpeg"' + '/>' + '</audio> ');
-            $('#videoUrl').html('<video width=100% controls>' + '<source src="' + jsonObj.models[objID].videoUrl + '"'+  ' type=' + '"video/mp4"' + '/>' + '</video> ');
-            $('#imageUrl').html('<a href="' + jsonObj.models[objID].imageUrl + '" class="lightbox">' + '<img src="' + jsonObj.models[objID].imageUrl + '" alt="Object Image"/>');
+            $('#videoUrl').html('<video width=100% height=700px controls>' + '<source src="' + jsonObj.models[objID].videoUrl + '"'+  ' type=' + '"video/mp4"' + '/>' + '</video> ');
+            $('#imageUrl').html('<a href="' + jsonObj.models[objID].imageUrl + '" class="lightbox center">' + '<img height=700px src="' + jsonObj.models[objID].imageUrl + '" alt="Object Image"/>');
         });
 
     }
