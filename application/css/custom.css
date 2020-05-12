@@ -204,7 +204,7 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center;
     background-size: cover;
     object-fit: cover;
-    opacity: 0.8;
+    /*opacity: 0.8;*/
 }
 #main_text {
     float: center;
@@ -300,6 +300,16 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 90;
     transition: all 0.4s;
   }
+
+  .hover-overlay2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    transition: all 0.4s;
+  }
   
   .hover img {
     width: 100%;
@@ -316,7 +326,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   
-  /* DEMO 3 ============================== */
+  /* Square hover js ============================== */
   .hover-3::after {
     content: '';
     width: calc(100% - 3rem);
@@ -379,9 +389,9 @@ h1, h2, h3, h4, h5, h6 {
     background: rgba(0, 0, 0, 0.8);
   }
 
-  /* DEMO 4 ============================== */
+  /* Landscape js hover  ============================== */
 .hover-4 img {
-    width: 110%;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -398,6 +408,19 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     padding: 3rem;
     z-index: 99;
+  }
+
+  .hover-4-subtitle {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    text-align: right;
+    border-right: 3px solid #fff;
+    padding: 0 1rem;
+    z-index: 99;
+    transform: translateX(-1.5rem);
+    opacity: 1;
+    transition: all 0.3s;
   }
   
   .hover-4-description {
@@ -418,6 +441,11 @@ h1, h2, h3, h4, h5, h6 {
       width: 50%;
       font-size: 25px;
     }
+
+    .hover-4-subtitle {
+        width: 50%;
+        font-size: 25px;
+      }
   }
   
   .hover-4:hover img {
@@ -437,7 +465,193 @@ h1, h2, h3, h4, h5, h6 {
   .hover-4:hover .hover-overlay {
     background: rgba(0, 0, 0, 0.8);
   }
+
+  /* Main Title Styling ============================== */
+.hover-5 img {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   
+  .hover-5 .hover-overlay2 {
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 90;
+  }
+  
+  .hover-5-title {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 3rem;
+    z-index: 99;
+  }
+
+  .hover-5-subtitle {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    text-align: right;
+    border-right: 3px solid #fff;
+    padding: 0 1rem;
+    z-index: 99;
+    transform: translateX(-1.5rem);
+    opacity: 1;
+    transition: all 0.3s;
+  }
+  
+  .hover-5-description {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    text-align: right;
+    border-right: 3px solid #fff;
+    padding: 0 1rem;
+    z-index: 99;
+    transform: translateX(-1.5rem);
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  
+  @media (min-width: 992px) {
+    .hover-5-description {
+      width: 50%;
+      font-size: 25px;
+    }
+
+    .hover-5-subtitle {
+        width: 50%;
+        font-size: 25px;
+      }
+  }
+  
+  .hover-5:hover img {
+    width: 100%;
+  }
+  
+  .hover-5:hover::after {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .hover-5:hover .hover-5-description {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .hover-5:hover .hover-overlay2 {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+    /* About page Content
+-------------------------------------------------- */
+  
+#carousel-image1 {
+  background-image: url(../assets/images/render_images/ipodRender.png); 
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  /*opacity: 0.8;*/
+}
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 48rem;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: inherit;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.first-slide {
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.second-slide {
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.third-slide {
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+  /* Gallery Content
+-------------------------------------------------- */
+
+.img-thumbnail {
+  padding: 0.25rem;
+  margin-top: 5px;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery .img-thumbnail {
+  background-color: black;
+  padding: 0.25rem;
+  margin: 8px;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  max-width: 40%;
+  height: auto;
+}
+
+.galleryDescription {
+  background-color: rgba(0, 0, 0, 0.03);
+  margin-bottom: 60px;
+}
+
+
+.galleryTitle {
+  font-size: 35px;
+  text-align: center;
+}
+
+.galleryText {
+  font-size: 20px;
+  text-align: left;
+}
   
 
   /* Structure Content
@@ -498,25 +712,7 @@ h1, h2, h3, h4, h5, h6 {
     border-color: white; /*set the color you want here*/
 }
 
-.img-thumbnail {
-    padding: 0.25rem;
-    margin-top: 5px;
-    background-color: #fff;
-    border: 1px solid #dee2e6;
-    border-radius: 0.25rem;
-    max-width: 100%;
-    height: auto;
-}
 
-.gallery .img-thumbnail {
-    background-color: rgba(255, 255, 255, 0.0);
-    padding: 0.25rem;
-    margin: 5px;
-    border: 1px solid #dee2e6;
-    border-radius: 0.25rem;
-    max-width: 43%;
-    height: auto;
-}
 
 .modelSelector {
     margin-bottom: 20px;
@@ -648,65 +844,7 @@ X3D, x3d {
 .interactionPanel {
     background-color: rgba(0, 0, 0, 0.03);
 }
-  /* About Content
--------------------------------------------------- */
-/* Carousel base class */
-.carousel {
-    margin-bottom: 4rem;
-  }
-  /* Since positioning the image, we need to help out the caption */
-  .carousel-caption {
-    bottom: 3rem;
-    z-index: 10;
-  }
   
-  /* Declare heights because of positioning of img element */
-  .carousel-item {
-    height: 32rem;
-    background-color: #777;
-  }
-  .carousel-item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 32rem;
-  }
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-  .marketing h2 {
-    font-weight: 400;
-  }
-  .marketing .col-lg-4 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
-  }
-
-  .first-slide {
-    background-repeat: no-repeat;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .second-slide {
-    background-repeat: no-repeat;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .third-slide {
-    background-repeat: no-repeat;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-  }
-
 
 
 

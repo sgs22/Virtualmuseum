@@ -153,10 +153,13 @@ function swap(selected) {
 
 function changeLook() {
     //Use this to change the style dynamically
-    document.getElementById('body').style.backgroundColor = '#343a40';
-    document.getElementById('header').style.fontFamily = 'ariel,sans-serif';
-    document.getElementById('footer').style.color = '#212529';
-    document.getElementsById('card').style.color = '#212529';
+	document.getElementById('body').style.backgroundColor = '#000000';
+	document.getElementById('body').style.Color = '#ffffff';
+    //document.getElementById('footer').style.color = '#212529';
+	document.getElementsByClassName('card').style.backgroundColor = '#000000';
+	document.getElementById('card-body').style.backgroundColor = '#000000';
+	document.getElementById('modelDescription').style.backgroundColor = '#000000';
+	document.getElementById('models').style.backgroundColor = '#000000';
 }
 
 function changeBack() {

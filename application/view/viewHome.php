@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="application/css/bootstrap.css">
-    <link rel="stylesheet" href="application/css/custom.css">
+    <!-- Bootstrap CSS jquery and fancybox-->
+    <link rel="stylesheet" type="text/css" href="application/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="application/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="application/css/jquery.fancybox.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -57,7 +58,7 @@
             <a id="navHome" class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a id="navAbout" class="nav-link" href="#">About</a>
+            <a id="navAbout" class="nav-link" href="#">Gallery</a>
           </li>
           <!-- Dropdown -->
           <li class="nav-item">
@@ -74,16 +75,13 @@
       <!-- HOME PAGE CONTENT -->
       <div id="home" style="display: block;">
         <div class="row">
-          <div class="col-sm-12">
-            <div id="main_3d_image" class="responsive">
-              <div class="col-8 mx-auto">
-                <div class="text-center" style="color: white;
-                                                padding-top: 350px;
-                                                text-shadow: 1.5px 1.5px black;"
-                                                >
-                  <h1 class="display-4 font-weight-normal">Apple History Museum</h1>
-                  <p class="lead font-weight-normal">Looking into the past of Apples most iconic products.</p>
-                  <a class="btn btn-outline-secondary" onclick="" href="javascript:animateScroll()" style="color: white; border-color: white;">Take a tour</a>
+          <div class="col-lg-12" style="padding-left: 0px; padding-right: 0px;">
+            <div class="imgoverlay">
+              <div class="hover hover-5 text-white" id="main_3d_image" class="responsive">
+                <div class="hover-overlay2"></div>
+                <div class="hover-5-content">
+                  <h3 class="hover-5-title text-uppercase font-weight-bold mb-0" style="font-size: 70px;"><span class="font-weight-light">Apple History </span>Museum</h3>
+                  <p class="hover-5-subtitle text-uppercase mb-0 small">Looking into the past of Apples most iconic products <br><a class="btn btn-link btn-lg" onclick="javascript:animateScroll()" href="#" style="color: white; font-size: 25px;">Take a tour</a></p>
                 </div>
               </div>
             </div>
@@ -98,7 +96,7 @@
                 <div class="hover-overlay"></div>
                 <div class="hover-3-content px-5 py-4">
                   <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light">iMac </span>G3</h3>
-                  <p class="hover-3-description small text-uppercase mb-0">First of its kind, not the last. <br>Steve Jobs.</p>
+                  <p class="hover-3-description small text-uppercase mb-0">The Mac that saved Apple <br>(and Steve Jobs)</p>
                 </div> 
               </div>
             </div>
@@ -110,7 +108,7 @@
                 <div class="hover-overlay"></div>
                 <div class="hover-3-content px-5 py-4">
                   <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light">Macintosh </span>128K</h3>
-                  <p class="hover-3-description small text-uppercase mb-0">First of its kind, not the last. <br>Steve Jobs.</p>
+                  <p class="hover-3-description small text-uppercase mb-0">The Apple Macintosh is far and away the   <br>easiest computer to learn and use that we have ever seen.</p>
                 </div> 
               </div>
             </div>
@@ -119,13 +117,13 @@
         <!-- Second Row of Cards on grid -->
         <div class="row">
           <!-- Center image -->
-          <div class="col-lg-12">
+          <div class="col-lg-12" style="padding-left: 0px; padding-right: 0px;">
             <div class="imgoverlay">
               <div class="hover hover-4 text-white" id="home_img_3" class="responsive">
                 <div class="hover-overlay"></div>
                 <div class="hover-4-content">
                   <h3 class="hover-4-title text-uppercase font-weight-bold mb-0"><span class="font-weight-light">Apple </span>II</h3>
-                  <p class="hover-4-description text-uppercase mb-0 small">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incidunt</p>
+                  <p class="hover-4-description text-uppercase mb-0 small">The Apple II was not designed like an ordinary product. It used crazy tricks everywhere. </p>
                 </div>
               </div>
             </div>
@@ -140,7 +138,7 @@
                 <div class="hover-overlay"></div>
                 <div class="hover-3-content px-5 py-4">
                   <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light">iPhone </span>2G</h3>
-                  <p class="hover-3-description small text-uppercase mb-0">First of its kind, not the last. <br>Steve Jobs.</p>
+                  <p class="hover-3-description small text-uppercase mb-0">“There are people who want us to innovate faster <br> and when we do people say, <br>‘Whoa, whoa, you’re going too fast.’</p>
                 </div> 
               </div>
             </div>
@@ -152,7 +150,7 @@
                 <div class="hover-overlay"></div>
                 <div class="hover-3-content px-5 py-4">
                   <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light">iPod </span>Classic</h3>
-                  <p class="hover-3-description small text-uppercase mb-0">First of its kind, not the last. <br>Steve Jobs.</p>
+                  <p class="hover-3-description small text-uppercase mb-0">“The iPod completely changed the way  ” <br>people approach music</p>
                 </div> 
               </div>
             </div>
@@ -162,53 +160,23 @@
       <!-- END HOME PAGE CONTENTS-->
       <!-- ABOUT PAGE -->
       <div id="about" style>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="first-slide" src="application/assets/images/render_images/ipodRender.png" alt="First slide">
-              <div class="container">
-                <div class="carousel-caption text-left">
-                  <h1>Explore the Virtual Museum</h1>
-                  <p>In this Virtual Museum you will be able to explore the iconic products that apple created revolutionising the late 20th century.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Explore Musuem</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="second-slide" src="application/assets/images/render_images/iPhoneRender.png" alt="Second slide">
-              <div class="container">
-                <div class="carousel-caption">
-                  <h1>Learn Apple's History</h1>
-                  <p>Look at renders, live models and products right from this website available and open for free 24 hours a day.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img class="third-slide" src="application/assets/images/render_images/macintoshRender.png" alt="Third slide">
-              <div class="container">
-                <div class="carousel-caption text-right">
-                  <h1>This is an example of how a virtual Museum is created</h1>
-                  <p>This virtual museum using the latest technology in web devlopment to seemlessly explore products cretaed over 40 years ago.</p>
-                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
+        <!-- Column to hold Image Gallery Generated through PHP -->
+        <!-- 3D image gallery -->
+        <div class="col-sm-12">
+                  <div class="card text-center">
+                      <div class="card-header">
+                          <ul class="nav nav-tabs card-header-tabs text-center">
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Gallery</a>
+                          </li>
+                      </div>
+                      <div class="card-body galleryDescription">
+                          <div class="card-title title_gallery galleryTitle text-center"></div>
+                          <div class="gallery" id="gallery"></div>
+                          <div class="card-text description_gallery galleryText text-center"></div>
+                      </div>
+                  </div> <!-- End gallery card -->
+              </div> <!-- End gallery column -->
           <!-- About Points -->
         <div class="container marketing">
           <!-- Three columns of text below the carousel -->
@@ -216,43 +184,23 @@
             <div class="col-lg-4">
               <img class="rounded-circle" src="application/assets/images/site_images/Steve_Jobs.jpg" alt="Generic placeholder image" width="140" height="140" background-size= "cover" background-position= "center">
               <h2>Steve Jobs</h2>
-              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+              <p>Steve Jobs was a charismatic pioneer of the personal computer era. With Steve Wozniak, Jobs founded Apple Inc. in 1976 and transformed the company into a world leader in telecommunications.</p>
               <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
               <img class="rounded-circle" src="application/assets/images/site_images/jony_ive.jpg" alt="Generic placeholder image" width="140" height="140"  background-size= "cover" background-position= "center">
               <h2>Jony Ive</h2>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+              <p>British industrial designer and Apple Inc. executive who was responsible for making design as integral to the appeal of a personal computer as its power and speed.</p>
               <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
               <img class="rounded-circle" src="application/assets/images/site_images/Steve_Wozniak.jpg" alt="Generic placeholder image" width="140" height="140"  background-size= "cover" background-position= "center">
               <h2>Steve Wozniak</h2>
-              <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+              <p>Steve Wozniak is an American computer scientist, inventor and programmer. In partnership with his friend Steve Jobs, Wozniak invented the Apple I computer. The pair founded Apple Computers in 1976 with Ronald Wayne.</p>
               <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
           </div><!-- /.row -->
         </div> 
-        <!-- Column to hold Image Gallery -->
-        <div class="col-sm-6">
-              <div class="card text-left">
-                <div class="card-header gallery-header">
-                  <ul class="nav nav-tabs card-header-tabs">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#">Gallery</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="card-body">
-                  <div class="card-title title_gallery drinksText"></div>
-                  <!-- PHP Genrated -->
-                  <div class="gallery" id="gallery"></div>
-                  <div class="card-text description_gallery drinksText"></div>
-                </div>
-              </div>
-              <!-- End of Gallery Card -->
-            </div>
-            <!-- End of Gallery column -->
       </div> <!-- END ABOUT PAGE -->
       <!-- 3D MODEL PAGE -->
       <div id="models" style>
@@ -515,12 +463,16 @@
     <script src="application/scripts/js/jquery-3.4.1.js"></script>
     <script src="application/scripts/js/popper.min.js"></script>
     <script src="application/scripts/js/bootstrap.js"></script>
+    <script src="jquery.fancybox.min.js"></script>
     <script src="application/scripts/js/custom.js"></script>
 
     <!-- JavaScript and PHP based Gallery generator  -->
     <script src="application/scripts/js/gallery_generator.js"></script>
     <script src="application/scripts/js/getJsonData.js"></script>
     <script src="application/scripts/js/get3Dmodels.js"></script>
+    <!-- fancyBox3 used to zoom images on gallery interface -->
+    <script src="application/scripts/js/jquery.fancybox.js"></script>
+    <!-- Model interaction for X3DOM API -->
     <script src="application/scripts/js/modelInteractions.js"></script>
   </body>
 </html>
