@@ -1,11 +1,9 @@
 //used to interact with each of the models in the gallery
 
-var spinning = true;
-var lighOn = true;
+var lightOn = false;
 
 function spin() {
-    spinning = !spinning;
-    document.getElementById('model_RotationTimer').setAttribute('enabled', spinning.toString());
+    document.getElementById('model__TouchSensor-SENSOR').setAttribute('bind', 'true');
 }
 
 function wireframe() {
@@ -14,18 +12,57 @@ function wireframe() {
     e.runtime.togglePoints(true);
 }
 
+function polygon() {
+    var e = document.getElementById('model');
+    e.runtime.togglePoints(false);
+}
+
+function resetView() {
+    var e = document.getElementById('model');
+    e.runtime.resetView();
+}
+
+function uprightView() {
+    var e = document.getElementById('model');
+    e.runtime.uprightView();
+}
+
+function nextView() {
+    var e = document.getElementById('model');
+    e.runtime.nextView();
+}
+
+function prevView() {
+    var e = document.getElementById('model');
+    e.runtime.prevView();
+}
+
 function lighting() {
-    lightOn = !lighOn;
+    lightOn = !lightOn;
     // this will need to be updated for lighting set in scene rather than headlight
-    document.getElementById('model_lighting').setAttribute('headlight', lighOn.toString());
+    document.getElementById('model__lighting').setAttribute('headlight', lightOn.toString());
 }
 
-function cam1() {
+function mainCamera() {
     // will need to be updated for correct camera naming
-    document.getElementById('model_Camera01').setAttribute('bind', 'true');
+    document.getElementById('model__MainCamera').setAttribute('bind', 'true');
 }
 
-function cam2() {
+function panAnimate() {
     // will need to be updated for correct camera naming
-    document.getElementById('model_Camera02').setAttribute('bind', 'true');
+    document.getElementById('model__panAnimate').setAttribute('bind', 'true');
+}
+
+function panCamera() {
+    // will need to be updated for correct camera naming
+    document.getElementById('model__PanCamera').setAttribute('bind', 'true');
+}
+
+function topAnimation() {
+    // will need to be updated for correct camera naming
+    document.getElementById('model__TopViewCamera').setAttribute('bind', 'true');
+}
+
+function playVid() {
+    document.getElementById('comVideo').play();
 }

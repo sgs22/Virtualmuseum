@@ -59,7 +59,7 @@
 			"modelNumber": "M5521 (EMC 1821)",
 			"productionDate": "August 15, 1998",
 			"releasePrice": "$1,299",
-			"soundUrl": "../assignment/application/assets/audio/American_Teen.mp3",
+			"soundUrl": "../assignment/application/assets/audio/text-to-speech/imac-text-to-speech.mp3",
 			"videoUrl": "../assignment/application/assets/videos/Apple iMac G3 Sage original TV Ad.mp4",
 			"x3domUrl": "../assignment/application/assets/x3d/iMacG3.x3d"
 		},
@@ -71,7 +71,7 @@
 			"modelNumber": "A1203",
 			"productionDate": "June 29, 2007",
 			"releasePrice": "$499",
-			"soundUrl": "link",
+			"soundUrl": "../assignment/application/assets/audio/text-to-speech/iphone-text-to-speech.mp3",
 			"videoUrl": "../assignment/application/assets/videos/iPhone 2g Commercial _Hello_.mp4",
 			"x3domUrl": "../assignment/application/assets/x3d/iPhone.x3d"
 		},
@@ -83,7 +83,7 @@
 			"modelNumber": "M0001",
 			"productionDate": "January 24, 1984",
 			"releasePrice": "$2,495",
-			"soundUrl": "link",
+			"soundUrl": "../assignment/application/assets/audio/text-to-speech/macintosh-text-to-speech.mp3",
 			"videoUrl": "../assignment/application/assets/videos/1984 Apple Macintosh Mac Commercial.mp4",
 			"x3domUrl": "../assignment/application/assets/x3d/Macintosh.x3d"
 		},
@@ -95,7 +95,7 @@
 			"modelNumber": "M8541",
 			"productionDate": "November 10, 2001",
 			"releasePrice": "$399",
-			"soundUrl": "link",
+			"soundUrl": "../assignment/application/assets/audio/text-to-speech/ipod-text-to-speech.mp3",
 			"videoUrl": "../assignment/application/assets/videos/iPod_ 1000 songs in your pocket.mp4",
 			"x3domUrl": "../assignment/application/assets/x3d/iPod.x3d"
 		}

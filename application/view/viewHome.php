@@ -30,7 +30,7 @@
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
 
-    <title>Vintage Apple Museum</title>
+    <title>AHMuseum</title>
   </head>
   <body id="body">
     <!-- Logo and navigation bar -->
@@ -81,8 +81,8 @@
                                                 padding-top: 350px;
                                                 text-shadow: 1.5px 1.5px black;"
                                                 >
-                  <h1 class="display-4 font-weight-normal">Apple Virtual Museum</h1>
-                  <p class="lead font-weight-normal">Looking into the history of Apples most iconic products.</p>
+                  <h1 class="display-4 font-weight-normal">Apple History Museum</h1>
+                  <p class="lead font-weight-normal">Looking into the past of Apples most iconic products.</p>
                   <a class="btn btn-outline-secondary" onclick="" href="javascript:animateScroll()" style="color: white; border-color: white;">Take a tour</a>
                 </div>
               </div>
@@ -94,36 +94,40 @@
           <!-- Left image -->
           <div class="col-sm-6">
             <div class="imgoverlay">
-              <div class="hover hover-3 text-white rounded" id="home_img_1" class="responsive">
+              <div class="hover hover-3 text-white" id="home_img_1" class="responsive">
                 <div class="hover-overlay"></div>
                 <div class="hover-3-content px-5 py-4">
-                  <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light">Image </span>Caption</h3>
-                  <p class="hover-3-description small text-uppercase mb-0">Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit.</p>
+                  <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light">iMac </span>G3</h3>
+                  <p class="hover-3-description small text-uppercase mb-0">First of its kind, not the last. <br>Steve Jobs.</p>
                 </div> 
               </div>
             </div>
           </div>
           <!-- Right image -->
           <div class="col-sm-6">
-            <div id="home_img_2" class="responsive">
-                <div id="home_imgtext_2" class="col-xs-12 col-sm-4">
-                  <div id="title_home"></div>
-                  <div id="subTitle_home"></div>
-                  <div id="description_home"></div>
-                </div>
+            <div class="imgoverlay">
+              <div class="hover hover-3 text-white" id="home_img_2" class="responsive">
+                <div class="hover-overlay"></div>
+                <div class="hover-3-content px-5 py-4">
+                  <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light">Macintosh </span>128K</h3>
+                  <p class="hover-3-description small text-uppercase mb-0">First of its kind, not the last. <br>Steve Jobs.</p>
+                </div> 
+              </div>
             </div>
           </div>
         </div>
         <!-- Second Row of Cards on grid -->
         <div class="row">
           <!-- Center image -->
-          <div class="col-sm-12">
-            <div id="home_img_3" class="responsive">
-                <div id="home_imgtext_3" class="col-xs-12 col-sm-4">
-                  <div id="title_home"></div>
-                  <div id="subTitle_home"></div>
-                  <div id="description_home"></div>
+          <div class="col-lg-12">
+            <div class="imgoverlay">
+              <div class="hover hover-4 text-white" id="home_img_3" class="responsive">
+                <div class="hover-overlay"></div>
+                <div class="hover-4-content">
+                  <h3 class="hover-4-title text-uppercase font-weight-bold mb-0"><span class="font-weight-light">Apple </span>II</h3>
+                  <p class="hover-4-description text-uppercase mb-0 small">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incidunt</p>
                 </div>
+              </div>
             </div>
           </div>
         </div>
@@ -131,22 +135,26 @@
         <div class="row">
           <!-- Left image -->
           <div class="col-sm-6">
-            <div id="home_img_4" class="responsive">
-                <div id="home_imgtext_4" class="col-xs-12 col-sm-4">
-                  <div id="title_home"></div>
-                  <div id="subTitle_home"></div>
-                  <div id="description_home"></div>
-                </div>
+            <div class="imgoverlay">
+              <div class="hover hover-3 text-white" id="home_img_4" class="responsive">
+                <div class="hover-overlay"></div>
+                <div class="hover-3-content px-5 py-4">
+                  <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light">iPhone </span>2G</h3>
+                  <p class="hover-3-description small text-uppercase mb-0">First of its kind, not the last. <br>Steve Jobs.</p>
+                </div> 
+              </div>
             </div>
           </div>
           <!-- Right image -->
           <div class="col-sm-6">
-            <div id="home_img_5" class="responsive">
-                <div id="home_imgtext_5" class="col-xs-12 col-sm-4">
-                  <div id="title_home"></div>
-                  <div id="subTitle_home"></div>
-                  <div id="description_home"></div>
-                </div>
+            <div class="imgoverlay">
+              <div class="hover hover-3 text-white" id="home_img_5" class="responsive">
+                <div class="hover-overlay"></div>
+                <div class="hover-3-content px-5 py-4">
+                  <h3 class="hover-3-title text-uppercase font-weight-bold mb-1"><span class="font-weight-light">iPod </span>Classic</h3>
+                  <p class="hover-3-description small text-uppercase mb-0">First of its kind, not the last. <br>Steve Jobs.</p>
+                </div> 
+              </div>
             </div>
           </div>
         </div>
@@ -258,10 +266,20 @@
                   <!-- Button to switch object X3D Model -->
                   <div id="models" style="display: block">
                     <div id="modelSelector" class="text-center">
-                      <button id="model0" type="button" class="btn btn-outline-dark btn-lg" onclick="reply_click(this.id)">iMac</button>
-                      <button id="model1" type="button" class="btn btn-outline-dark btn-lg" onclick="reply_click(this.id)">iPhone</button>
-                      <button id="model2" type="button" class="btn btn-outline-dark btn-lg" onclick="reply_click(this.id)">Macintosh</button>
-                      <button id="model3" type="button" class="btn btn-outline-dark btn-lg" onclick="reply_click(this.id)">iPod</button>
+                      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-outline-dark btn-lg active">
+                            <input type="radio" name="options" id="model0" autocomplete="off" onclick="reply_click(this.id);"checked>iMac
+                        </label>
+                        <label class="btn btn-outline-dark btn-lg">
+                            <input type="radio" name="options" id="model1" autocomplete="off" onclick="reply_click(this.id);">iPhone
+                        </label>
+                        <label class="btn btn-outline-dark btn-lg">
+                            <input type="radio" name="options" id="model2" autocomplete="off" onclick="reply_click(this.id);">Macintosh
+                        </label>
+                        <label class="btn btn-outline-dark btn-lg">
+                            <input type="radio" name="options" id="model3" autocomplete="off" onclick="reply_click(this.id);">iPod
+                        </label>
+                      </div>
                     </div>
                       <!-- Place Object Model here -->
                     <div style="display:block;">
@@ -285,7 +303,7 @@
                 </div>
               </div>
             </div> <!-- End x3d Models  --> 
-            <div class="col-sm-4"> <!-- Column to hold Description -->
+            <div class="col-sm-4"> <!-- Column to hold Description --> 
               <!-- Row to hold description text -->
                 <div id="models" class="row" style>
                   <div class="col-sm-12">
@@ -302,12 +320,21 @@
                           <div id="releasePrice" class="card-subtitle modelSubTitle"></div>
                         <div class="subTitle-header">Description: </div>
                           <div id="description" class="card-text modelText"></div>
-                        <div class="subTitle-header">Audio Accessibility: </div>
+                        <div class="subTitle-header">Audio Accessibility (Siri): <img src="https://img.icons8.com/nolan/32/siri.png"/> </div>
                           <div id="soundUrl" class="card-text playBackAudio"></div>
-                        <div id="objSelector" class="text-center">
-                          <button id="obj3D" type="button" class="btn btn-dark x3dButton" onclick="reply_click(this.id)">X3D Model</button>
-                          <button id="objVideo" type="button" class="btn btn-dark videoButton" onclick="reply_click(this.id)">Video</button>
-                          <button id="objImage" type="button" class="btn btn-dark imgButton" onclick="reply_click(this.id)">Image</button>
+                        <div class="subTitle-header">Media Format: </div>
+                        <div id="objSelector" class="text-left" style="margin-bottom: 3px;">
+                          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-outline-dark x3dButton active">
+                                <input type="radio" name="options" id="obj3D" autocomplete="off" onclick="reply_click(this.id);"checked>X3D Model
+                            </label>
+                            <label class="btn btn-outline-dark videoButton">
+                                <input type="radio" name="options" id="objVideo" autocomplete="off" onclick="reply_click(this.id);playVid();"> Launch Video
+                            </label>
+                            <label class="btn btn-outline-dark imgButton">
+                                <input type="radio" name="options" id="objImage" autocomplete="off" onclick="reply_click(this.id);"> Photo Image
+                            </label>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -332,16 +359,20 @@
                   </div>
                   <div class="card-body" style="background-color: rgba(0, 0, 0, 0.03);">
                     <div class="card-Title"></div>
-                    <a href="#" class="btn btn-dark btn-responsive" onclick="cameraFront();">
-                      Default View
-                    </a>
-                    <a href="#" class="btn btn-dark btn-responsive" onclick="cameraSide();">
-                      Side View
-                    </a> 
-                    <a href="#" class="btn btn-dark btn-responsive">
-                      Disable
-                    </a>
-                    <div class="card-text x3dCameraDescription drinksText"></div>
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                      <label class="btn btn-outline-dark">
+                        <input type="radio" name="options" id="option1" autocomplete="off" onclick="prevView();"> Previous
+                      </label>
+                      <label class="btn btn-outline-dark active">
+                        <input type="radio" name="options" id="option2" autocomplete="off" onclick="mainCamera();" checked> Default
+                      </label>
+                      <label class="btn btn-outline-dark">
+                        <input type="radio" name="options" id="option3" autocomplete="off" onclick="nextView();"> Next
+                      </label>
+                      <label class="btn btn-outline-dark">
+                        <input type="radio" name="options" id="option3" autocomplete="off" onclick="resetView();"> Reset
+                      </label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -359,15 +390,17 @@
                 </div>
                 <div class="card-body" style="background-color: rgba(0, 0, 0, 0.03);">
                   <div class="card-Title"></div>
-                  <a href="#" class="btn btn-dark btn-responsive" onclick="spin();">
-                    Rotate X axis
-                  </a>
-                  <a href="#" class="btn btn-dark btn-responsive" onclick="spin();">
-                    Rotate Y axis
-                  </a> 
-                  <a href="#" class="btn btn-dark btn-responsive">
-                    Stop
-                  </a>
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                      <label class="btn btn-outline-dark">
+                        <input type="radio" name="options" id="option1" autocomplete="off" onclick="spin();">Rotate Animation
+                      </label>
+                      <label class="btn btn-outline-dark">
+                        <input type="radio" name="options" id="option2" autocomplete="off" onclick="topAnimation();">Pan Animation
+                      </label>
+                      <label class="btn btn-outline-dark active">
+                        <input type="radio" name="options" id="option3" autocomplete="off" onclick="mainCamera();" checked>Stop Animation
+                      </label>
+                    </div>
                 </div>
               </div>
             </div>
@@ -383,16 +416,17 @@
                 </div>
                 <div class="card-body" style="background-color: rgba(0, 0, 0, 0.03);">
                   <div class="card-Title"></div>
-                  <a href="#" class="btn btn-dark btn-responsive" onclick="wireframe();">
-                    Polygon
-                  </a>
-                  <a href="#" class="btn btn-dark btn-responsive" onclick="wireframe();">
-                    Wireframe
-                  </a> 
-                  <a href="#" class="btn btn-dark btn-responsive" onclick="">
-                    HeadLight
-                  </a>
-                  <div class="card-text x3dAnimationDescription drinksText"></div>
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                      <label class="btn btn-outline-dark active">
+                        <input type="radio" name="options" id="option1" autocomplete="off" onclick="polygon();" checked> Polygon
+                      </label>
+                      <label class="btn btn-outline-dark">
+                        <input type="radio" name="options" id="option2" autocomplete="off" onclick="wireframe();"> Wireframe
+                      </label>
+                      <label class="btn btn-outline-dark">
+                        <input type="radio" name="options" id="option3" autocomplete="off" onclick="lighting()"> Headlight
+                      </label>
+                    </div>
                 </div>
               </div>
             </div>
@@ -412,7 +446,7 @@
           <ul class="list-unstyled text-small">
             <li><a class="text-muted" href="javascript:changeLook()">Dark Mode</a></li>
             <li><a class="text-muted" href="javascript:changeBack()">Standard</a></li>
-            <li><a class="text-muted" href="#">Team feature</a></li>
+            <li><a class="text-muted" href="#">more styling</a></li>
             <li><a class="text-muted" href="#">Stuff for developers</a></li>
             <li><a class="text-muted" href="#">Another one</a></li>
             <li><a class="text-muted" href="#">Last time</a></li>
@@ -421,17 +455,17 @@
         <div class="col-6 col-md">
           <h5>Resources</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Resource</a></li>
-            <li><a class="text-muted" href="#">Resource name</a></li>
-            <li><a class="text-muted" href="#">Another resource</a></li>
-            <li><a class="text-muted" href="#">Final resource</a></li>
+            <li><a class="text-muted" href="#">Download models</a></li>
+            <li><a class="text-muted" href="#">View source on GitHub</a></li>
+            <li><a class="text-muted" href="#">Download source</a></li>
+            <li><a class="text-muted" href="#">Bibliography</li>
           </ul>
         </div>
         <div class="col-6 col-md">
           <h5>Social</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Business</a></li>
-            <li><a class="text-muted" href="#">Education</a></li>
+            <li><a class="text-muted" href="#">GitHub</a></li>
+            <li><a class="text-muted" href="#">Sussex University</a></li>
             <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
             <li><a href="#"><i class="fab fa-google-plus fa-2x"></i></a></li>
@@ -441,8 +475,9 @@
         <div class="col-6 col-md">
           <h5>About</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Team</a></li>
-            <li><a class="text-muted" href="#">Locations</a></li>
+            <li><a class="text-muted" href="#">Information</a></li>
+            <li><a class="text-muted" href="#">Bootstrap</a></li>
+            <li><a class="text-muted" href="#">X3dom</a></li>
             <li><a class="text-muted" href="#">Privacy</a></li>
             <li><a class="text-muted" href="#">Terms</a></li>
           </ul>
