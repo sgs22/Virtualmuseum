@@ -7,7 +7,7 @@ class Model {
 	public function __construct()
 	{
 		// Set up the database source name (DSN)
-		$dsn = 'sqlite:./db/test1.db';
+		$dsn = 'sqlite:./db/3dapp.db';
 		
 		// Then create a connection to a database with the PDO() function
 		try {	
@@ -30,7 +30,7 @@ class Model {
 	{
 		try {
 			$this->dbhandle->exec("CREATE TABLE Model_3D (Id INTEGER PRIMARY KEY, x3dModelTitle TEXT, x3dCreationMethod TEXT, modelTitle TEXT, modelSubtitle TEXT, modelDescription TEXT)");
-			return "Model_3D table is successfully created inside test1.db file";
+			return "Model_3D table is successfully created inside 3dapp.db file";
 		}
 		catch (PD0EXception $e){
 			print new Exception($e->getMessage());
@@ -48,7 +48,7 @@ class Model {
 				VALUES (2, 'X3D Sprite Model', 'string_2', 'string_3','string_4','string_5'); " .
 			"INSERT INTO Model_3D (Id, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
 				VALUES (3, 'X3D Pepper Model', 'string_2', 'string_3','string_4','string_5'); ");
-			return "X3D model data inserted successfully inside test1.db";
+			return "X3D model data inserted successfully inside 3dapp.db";
 		}
 		catch(PD0EXception $e) {
 			print new Exception($e->getMessage());

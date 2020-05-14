@@ -3,7 +3,7 @@
 <X3D xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' profile='Full' version='3.0' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.0.xsd'>
   <Scene DEF='scene'>
     <Viewpoint DEF='MainCamera' description='MainCamera' orientation='0.32 0.9445 0.07386 -0.4793' position='-72.54 72.44 169' fieldOfView='0.6024'/>
-    <NavigationInfo DEF='NavInfo001' headlight='false' type='"EXAMINE"'/>
+    <NavigationInfo DEF='NavInfo' headlight='true' type='"EXAMINE"'/>
     <PointLight DEF='Omni001' intensity='0.5' location='99.92 117.2 -0.4485' radius='2715'/>
     <PointLight DEF='Omni002' intensity='0.5' location='0.3831 117.2 -85.12' radius='2715'/>
     <PointLight DEF='Omni003' intensity='0.5' location='-99.61 117.2 -0.4301' radius='2715'/>

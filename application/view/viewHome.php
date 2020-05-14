@@ -35,41 +35,34 @@
   </head>
   <body id="body">
     <!-- Logo and navigation bar -->
-    <nav class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
-      <!-- Will need to be updated for an actual rerot apple logo-->
-      <!-- Brand -->
-      <div class="logo">
-        <a class="navbar-brand" href="index.php">
-        <i class="fa fa-apple fa-retro fa-2x"></i>
-          <!--<p>Apple's Most innovative products.</p>-->
-        </a>
-      </div>
-        
-      <!-- Collapsible NavBar Menu -->
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse ">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark navbar-style" >
+        <!-- Brand LOGO genrated using CSS -->
+        <div class="logo">
+          <a class="navbar-brand" href="index.php">
+            <i class="fa fa-apple fa-retro fa-2x"></i>
+          </a>
+        </div>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <!-- Link Menu item button to the links in navbar-->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- Links -->
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a id="navHome" class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a id="navAbout" class="nav-link" href="#">Gallery</a>
-          </li>
-          <!-- Dropdown -->
-          <li class="nav-item">
-            <a id="navModels" class="nav-link" href="#" id="navbardrop">Models</a>
-          </li>
+        <div class="navbar-collapse justify-content-md-center collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a id="navHome" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a id="navAbout" class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a id="navModels" class="nav-link" href="#">Models</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
             </li>
           </ul>
-      </div>
-    </nav>
+        </div>
+      </nav>
     <!-- Start of 3D App SPA Contents -->
     <div class="container-fluid main_contents"> 
       <!-- HOME PAGE CONTENT -->
@@ -80,8 +73,8 @@
               <div class="hover hover-5 text-white" id="main_3d_image" class="responsive">
                 <div class="hover-overlay2"></div>
                 <div class="hover-5-content">
-                  <h3 class="hover-5-title text-uppercase font-weight-bold mb-0" style="font-size: 70px;"><span class="font-weight-light">Apple History </span>Museum</h3>
-                  <p class="hover-5-subtitle text-uppercase mb-0 small">Looking into the past of Apples most iconic products <br><a class="btn btn-link btn-lg" onclick="javascript:animateScroll()" href="#" style="color: white; font-size: 25px;">Take a tour</a></p>
+                  <h3 id="Main-Title" class="hover-5-title text-uppercase font-weight-bold mb-0" style="font-size: 70px;"><span class="font-weight-light">Apple History </span>Museum</h3>
+                  <p class="hover-5-subtitle text-uppercase mb-0 small">Looking into the past of Apples most iconic products <br><a class="btn btn-link btn-lg" onclick="javascript:animateScroll()" href="#" style="color: white; font-size: 25px; 25px;padding-right: 0px;padding-top: 0px;">Take a tour</a></p>
                 </div>
               </div>
             </div>
@@ -90,7 +83,7 @@
         <!-- First Row of Cards on grid -->
         <div class="row">
           <!-- Left image -->
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <div class="imgoverlay">
               <div class="hover hover-3 text-white" id="home_img_1" class="responsive">
                 <div class="hover-overlay"></div>
@@ -102,7 +95,7 @@
             </div>
           </div>
           <!-- Right image -->
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <div class="imgoverlay">
               <div class="hover hover-3 text-white" id="home_img_2" class="responsive">
                 <div class="hover-overlay"></div>
@@ -132,7 +125,7 @@
         <!-- Third Row of Cards on grid -->
         <div class="row">
           <!-- Left image -->
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <div class="imgoverlay">
               <div class="hover hover-3 text-white" id="home_img_4" class="responsive">
                 <div class="hover-overlay"></div>
@@ -144,7 +137,7 @@
             </div>
           </div>
           <!-- Right image -->
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <div class="imgoverlay">
               <div class="hover hover-3 text-white" id="home_img_5" class="responsive">
                 <div class="hover-overlay"></div>
@@ -184,20 +177,20 @@
             <div class="col-lg-4">
               <img class="rounded-circle" src="application/assets/images/site_images/Steve_Jobs.jpg" alt="Generic placeholder image" width="140" height="140" background-size= "cover" background-position= "center">
               <h2>Steve Jobs</h2>
-              <p>Steve Jobs was a charismatic pioneer of the personal computer era. With Steve Wozniak, Jobs founded Apple Inc. in 1976 and transformed the company into a world leader in telecommunications.</p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              <p>Steve Jobs was a charismatic pioneer of the personal computer era. With Steve Wozniak, Jobs founded Apple Inc. in 1976 and transformed the company into a world leader.</p>
+              <p><a class="btn btn-dark" target="_blank" href="https://en.wikipedia.org/wiki/Steve_Jobs" role="button">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
               <img class="rounded-circle" src="application/assets/images/site_images/jony_ive.jpg" alt="Generic placeholder image" width="140" height="140"  background-size= "cover" background-position= "center">
               <h2>Jony Ive</h2>
               <p>British industrial designer and Apple Inc. executive who was responsible for making design as integral to the appeal of a personal computer as its power and speed.</p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              <p><a class="btn btn-dark" target="_blank" href="https://en.wikipedia.org/wiki/Jony_Ive" role="button">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
               <img class="rounded-circle" src="application/assets/images/site_images/Steve_Wozniak.jpg" alt="Generic placeholder image" width="140" height="140"  background-size= "cover" background-position= "center">
               <h2>Steve Wozniak</h2>
-              <p>Steve Wozniak is an American computer scientist, inventor and programmer. In partnership with his friend Steve Jobs, Wozniak invented the Apple I computer. The pair founded Apple Computers in 1976 with Ronald Wayne.</p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+              <p>Computer scientist, inventor and programmer. In partnership with his friend Steve Jobs, Wozniak invented the Apple I computer. The pair founded Applein 1976.</p>
+              <p><a class="btn btn-dark" target="_blank" href="https://en.wikipedia.org/wiki/Steve_Wozniak" role="button">View details &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
           </div><!-- /.row -->
         </div> 
@@ -207,7 +200,7 @@
           <!-- Row to hold cards -->
           <div class="row">
             <!-- Column to hold x3d Model -->
-            <div class="col-sm-8">
+            <div class="col-lg-8">
               <div class="card text-left">
                 <!-- Bootstrap 4 card body tp hold info about x3d model -->
                 <div class="card-body">
@@ -251,7 +244,7 @@
                 </div>
               </div>
             </div> <!-- End x3d Models  --> 
-            <div class="col-sm-4"> <!-- Column to hold Description --> 
+            <div class="col-lg-4"> <!-- Column to hold Description --> 
               <!-- Row to hold description text -->
                 <div id="models" class="row" style>
                   <div class="col-sm-12">
@@ -294,7 +287,7 @@
           </div> <!-- Ends row x3d Model and Gallery -->
           <div id="interaction" class="row" style> <!-- Start Interaction Panels -->
             <!-- Column for camera view controls -->
-            <div class="col-sm-4">
+            <div class="col-xl-4">
               <div class="interactionPanel">
                 <div class="card text-center">
                   <div class="card-header text-center">
@@ -315,7 +308,7 @@
                         <input type="radio" name="options" id="option2" autocomplete="off" onclick="mainCamera();" checked> Default
                       </label>
                       <label class="btn btn-outline-dark">
-                        <input type="radio" name="options" id="option3" autocomplete="off" onclick="nextView();"> Next
+                        <input type="radio" name="options" id="option3" autocomplete="off" onclick="nextView();"> Next 
                       </label>
                       <label class="btn btn-outline-dark">
                         <input type="radio" name="options" id="option3" autocomplete="off" onclick="resetView();"> Reset
@@ -326,7 +319,7 @@
               </div>
             </div>
             <!-- Column for Animation controls -->
-            <div class="col-sm-4">
+            <div class="col-xl-4">
               <div class="card text-center">
                 <div class="card-header text-center">
                   <ul class="nav nav-tabs card-header-tabs text-center">
@@ -352,7 +345,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-xl-4">
               <div class="card text-center">
                 <div class="card-header text-center">
                   <ul class="nav nav-tabs card-header-tabs text-center">
@@ -367,12 +360,20 @@
                   <div class="btn-group btn-group-toggle" data-toggle="buttons">
                       <label class="btn btn-outline-dark active">
                         <input type="radio" name="options" id="option1" autocomplete="off" onclick="polygon();" checked> Polygon
-                      </label>
+                     </label>
                       <label class="btn btn-outline-dark">
                         <input type="radio" name="options" id="option2" autocomplete="off" onclick="wireframe();"> Wireframe
                       </label>
                       <label class="btn btn-outline-dark">
-                        <input type="radio" name="options" id="option3" autocomplete="off" onclick="lighting()"> Headlight
+                        <input type="radio" name="options" id="option2" autocomplete="off" onclick="iMacColor();"> Colour (iMac Only)
+                      </label>
+                    </div>
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons" style="padding-left: 10px;">
+                      <label class="btn btn-outline-dark active">
+                        <input type="radio" name="options" id="option3" autocomplete="off" onclick="headlight()" checked> Headlight
+                      </label>
+                      <label class="btn btn-outline-dark">
+                        <input type="radio" name="options" id="option3" autocomplete="off" onclick="pointlight()"> Pointlight
                       </label>
                     </div>
                 </div>
@@ -392,42 +393,36 @@
         <div class="col-6 col-md">
           <h5>Features</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="javascript:changeLook()">Dark Mode</a></li>
-            <li><a class="text-muted" href="javascript:changeBack()">Standard</a></li>
-            <li><a class="text-muted" href="#">more styling</a></li>
-            <li><a class="text-muted" href="#">Stuff for developers</a></li>
-            <li><a class="text-muted" href="#">Another one</a></li>
-            <li><a class="text-muted" href="#">Last time</a></li>
+            <li><a class="text-muted" href="javascript:changeLook()">Modern Dark Mode</a></li>
+            <li><a class="text-muted" href="javascript:changeBack()">Light Mode (Standard)</a></li>
+            <li><a class="text-muted" href="javascript:changeLook2()">Retro Mode</a></li>
           </ul>
         </div>
         <div class="col-6 col-md">
           <h5>Resources</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Download models</a></li>
-            <li><a class="text-muted" href="#">View source on GitHub</a></li>
-            <li><a class="text-muted" href="#">Download source</a></li>
-            <li><a class="text-muted" href="#">Bibliography</li>
+            <li><a class="text-muted" href="application/assets/download/Models.zip">Download models</a></li>
+            <li><a class="text-muted" target="_blank" href="https://github.com/sgs22/Virtualmuseum">View source on GitHub</a></li>
+            <li><a class="text-muted" href="application/assets/download/VRML.zip">Download VRML</a></li>
+            <li><a class="text-muted" target="_blank" href="#">Bibliography</li>
           </ul>
         </div>
         <div class="col-6 col-md">
-          <h5>Social</h5>
+          <h5 style=color:#212529>Social</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">GitHub</a></li>
-            <li><a class="text-muted" href="#">Sussex University</a></li>
-            <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
-            <li><a href="#"><i class="fab fa-google-plus fa-2x"></i></a></li>
-            <li><a href="#"><i class="fab fa-github-square fa-2x"></i></a></li>
+            <li><a class="text-muted" target="_blank" href="https://github.com/">GitHub</a></li>
+            <li><a class="text-muted" target="_blank" href="https://www.sussex.ac.uk/">Sussex University</a></li>
+            <li><a class="text-muted" target="_blank" href="https://www.linkedin.com/">Linkedin</a></li>
           </ul>
         </div>
         <div class="col-6 col-md">
           <h5>About</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="#">Information</a></li>
-            <li><a class="text-muted" href="#">Bootstrap</a></li>
-            <li><a class="text-muted" href="#">X3dom</a></li>
-            <li><a class="text-muted" href="#">Privacy</a></li>
-            <li><a class="text-muted" href="#">Terms</a></li>
+            <li><a class="text-muted" target="_blank" href="#">Information</a></li>
+            <li><a class="text-muted" target="_blank" href="https://getbootstrap.com/">Bootstrap</a></li>
+            <li><a class="text-muted" target="_blank" href="https://www.x3dom.org/">X3dom</a></li>
+            <li><a class="text-muted" target="_blank" href="#">Privacy</a></li>
+            <li><a class="text-muted" target="_blank" href="#">Terms</a></li>
           </ul>
         </div>
       </div>
@@ -449,7 +444,7 @@
           </div>
           <!-- Modal Footer -->
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -463,7 +458,6 @@
     <script src="application/scripts/js/jquery-3.4.1.js"></script>
     <script src="application/scripts/js/popper.min.js"></script>
     <script src="application/scripts/js/bootstrap.js"></script>
-    <script src="jquery.fancybox.min.js"></script>
     <script src="application/scripts/js/custom.js"></script>
 
     <!-- JavaScript and PHP based Gallery generator  -->

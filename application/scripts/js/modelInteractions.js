@@ -40,7 +40,7 @@ function prevView() {
 function lighting() {
     lightOn = !lightOn;
     // this will need to be updated for lighting set in scene rather than headlight
-    document.getElementById('model__lighting').setAttribute('headlight', lightOn.toString());
+    document.getElementById('model__Omni001').setAttribute('headlight', lightOn.toString());
 }
 
 function mainCamera() {
@@ -66,3 +66,39 @@ function topAnimation() {
 function playVid() {
     document.getElementById('comVideo').play();
 }
+
+//over-rights pointlights in the scene and uses built in headlight
+function headlight() {
+    if(document.getElementById('model__NavInfo').getAttribute('headlight')!= 'true')
+        document.getElementById('model__NavInfo').setAttribute('headlight', 'true');
+    else
+        document.getElementById('model__NavInfo').setAttribute('headlight', 'true');
+}
+
+//uses pointlights already set in the scene
+function pointlight() {
+    if(document.getElementById('model__NavInfo').getAttribute('headlight')!= 'false')
+    document.getElementById('model__NavInfo').setAttribute('headlight', 'false');
+else
+    document.getElementById('model__NavInfo').setAttribute('headlight', 'false');
+}
+
+function iMacColor() {
+    if((document.getElementById('model__speakerLMaterial').getAttribute('diffuseColor')!= '0.1098 0.349 0.6941') && 
+        (document.getElementById('model__speakerRMaterial').getAttribute('diffuseColor')!= '0.1098 0.349 0.6941') && 
+        (document.getElementById('model__bodyMaterial').getAttribute('diffuseColor')!= '0.1098 0.349 0.6941') &&
+        (document.getElementById('model__standMaterial').getAttribute('diffuseColor')!= '0.1098 0.349 0.6941')) {
+            document.getElementById('model__speakerLMaterial').setAttribute('diffuseColor', '0.1098 0.349 0.6941');
+            document.getElementById('model__speakerRMaterial').setAttribute('diffuseColor', '0.1098 0.349 0.6941');
+            document.getElementById('model__bodyMaterial').setAttribute('diffuseColor', '0.1098 0.349 0.6941');
+            document.getElementById('model__standMaterial').setAttribute('diffuseColor', '0.1098 0.349 0.6941');
+        }
+    else
+    {
+        document.getElementById('model__speakerLMaterial').setAttribute('diffuseColor', '0.2548 0.001 0.001'); //change colour to orange
+        document.getElementById('model__speakerRMaterial').setAttribute('diffuseColor', '0.2548 0.001 0.001'); //change colour to orange
+        document.getElementById('model__bodyMaterial').setAttribute('diffuseColor', '0.2548 0.001 0.001'); //change colour to orange
+        document.getElementById('model__standMaterial').setAttribute('diffuseColor', '0.2548 0.001 0.001'); //change colour to orange
+    }
+}
+

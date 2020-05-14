@@ -162,6 +162,19 @@ function changeLook() {
 	document.getElementById('models').style.backgroundColor = '#000000';
 }
 
+function changeLook2() {
+    //Use this to change the style dynamically
+	document.getElementById('body').style.backgroundColor = 'beige';
+	document.getElementById('Main-Title').style.fontFamily = 'AppleGaramond';
+	document.getElementsByClassName('h3').style.backgroundColor = 'AppleGaramond';
+	document.getElementById('body').style.Color = '#ffffff';
+    //document.getElementById('footer').style.color = '#212529';
+	document.getElementsByClassName('card').style.backgroundColor = 'beige';
+	document.getElementById('card-body').style.backgroundColor = 'beige';
+	document.getElementById('modelDescription').style.backgroundColor = 'beige';
+	document.getElementById('models').style.backgroundColor = 'beige';
+}
+
 function changeBack() {
     document.getElementById('body').style.backgroundColor = 'white';
     document.getElementById('footer').style.backgroundColor = '#760003';
